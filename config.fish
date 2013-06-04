@@ -1,6 +1,6 @@
-# Update path
+# Set path
+set -x PATH /usr/local/share/npm/bin /usr/local/share/python /usr/local/bin /usr/local/sbin $HOME/bin $PATH
 
-set -x PATH $PATH /usr/local/share/npm/bin /usr/local/share/python /usr/local/bin /usr/local/sbin $HOME/bin
 # Initialise rbenv
 set PATH $HOME/.rbenv/bin $PATH
 set PATH $HOME/.rbenv/shims $PATH
