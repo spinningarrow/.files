@@ -1,0 +1,41 @@
+[user]
+	email = sahil29@gmail.com
+	name = Sahil Bajaj
+[core]
+	excludesfile = /Users/sahil/.gitignore
+	editor = subl -w
+[alias]
+	ai = add --interactive
+	co = checkout
+	dt = difftool -y -d
+	flog = log HEAD..origin --pretty=oneline
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	st = status -sb
+	sl = stash list
+	ss = stash save
+	sp = stash pop
+	sc = stash clear
+	sa = stash apply
+	up = !sh -c 'git stash && git rebase $0 && git stash pop'
+[color]
+	ui = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[diff]
+	tool = opendiff 
+#[difftool "diffmerge"]
+#	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
+[push]
+	default = matching
