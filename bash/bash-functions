@@ -1,0 +1,64 @@
+#function title() {
+#	echo -ne "\033]0;$@\007";
+#}
+
+function mvreplace() {
+	for i in ./*$1*$3;do mv -- "$i" "${i//$1/$2}"; done;
+}
+
+#function _sleep() {
+#	osascript -e 'tell application "System Events" to sleep';
+#}
+
+function chromenew() {
+	/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --user-data-dir="$1" > /dev/null 2>&1
+}
+
+function play() {
+	MUSIC_DIR=~/Music/Music
+	args="$@"
+	songs=$(find $MUSIC_DIR -ipath "*${args}*.mp3")
+	chars=$(echo -n "$songs" | wc -m | awk {'print $1'})
+	lines=$(echo "$songs" | wc -l | awk {'print $1'})
+
+	if [ $chars -eq "0" ]
+	then
+		echo "No songs found matching '$args'."
+	elif [ $lines -eq "1" ]
+	then
+		echo "$songs"
+		afplay "$(echo -n "$songs")" &
+	else
+		echo "$songs" | nl | grep -i "$args"
+		read -p "Play song #" num
+			if [ $num = "?" ]; then num=$[$RANDOM % $lines + 1]; fi
+			selection=$(echo "$songs" | sed -n "$num"p)
+			echo "$selection"
+			afplay "$selection" &
+	fi
+
+	alias stop='killall -TERM afplay'
+}
+
+#function serve() {
+#	php -S localhost:$1
+#}
+
+#function pyserve() {
+#	python -m SimpleHTTPServer $1
+#}
+
+function serve() {
+	
+	if [ "$1" = 'php' ]
+	then
+		php -S localhost:$2
+	
+	elif [ "$1" = 'python' ]
+	then
+		python -m SimpleHTTPServer $2
+
+	else
+		echo 'Usage: serve <php|python> <port>'
+	fi
+}
