@@ -1,5 +1,5 @@
 # Set path
-set -x PATH /usr/local/share/npm/bin /usr/local/share/python /usr/local/bin /usr/local/sbin $HOME/bin $PATH
+set -x PATH /usr/local/share/npm/bin /usr/local/bin /usr/local/sbin $HOME/bin $PATH
 
 # Initialise rbenv
 set PATH $HOME/.rbenv/bin $PATH
