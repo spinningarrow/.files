@@ -7,7 +7,7 @@ set PATH $HOME/.rbenv/shims $PATH
 rbenv rehash >/dev/null ^&1
 
 # Include aliases
-. $HOME/dotfiles/aliases
+. $HOME/.files/aliases
 
 # Set default pager and options for less
 # (copied from zsh, makes it scroll faster for some reason)
