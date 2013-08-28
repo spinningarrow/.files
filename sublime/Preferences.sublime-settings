@@ -1,0 +1,23 @@
+{
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/Color Schemes - Custom/Putty.tmTheme",
+	"create_window_at_startup": false,
+	"detect_slow_plugins": false,
+	"font_face": "M+ 1m",
+	"font_size": 13.0,
+	"ignored_packages":
+	[
+		"Markdown Preview",
+		"Vintage"
+	],
+	"rulers":
+	[
+		72
+	],
+	"save_on_focus_lost": true,
+	"soda_classic_tabs": true,
+	"theme": "Soda Dark 3.sublime-theme",
+	"trim_trailing_white_space_on_save": true,
+	"use_simple_full_screen": true,
+	"word_wrap": "true"
+}
