@@ -39,3 +39,5 @@
 #	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
 [push]
 	default = matching
+[credential]
+	helper = osxkeychain
