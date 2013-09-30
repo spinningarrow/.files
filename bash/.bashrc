@@ -5,9 +5,10 @@ export PATH="/usr/local/share/npm/bin:/usr/local/share/python:/usr/local/bin:~/b
 export EDITOR="vim"
 
 # Use the source
-source ~/.files/.aliases
-source ~/.files/.functions
-source ~/.files/.bash_prompt
+source ~/.files/aliases
+source ~/.files/bash/bash-aliases
+source ~/.files/bash/bash-functions
+source ~/.files/bash/bash_prompt
 
 # Bash completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
