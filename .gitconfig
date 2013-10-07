@@ -34,9 +34,14 @@
 	changed = green
 	untracked = cyan
 [diff]
-	tool = opendiff 
-#[difftool "diffmerge"]
-#	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
+	tool = opendiff
+[difftool "diffmerge"]
+	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
+[difftool "p4mergetool"]
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE
+[mergetool "diffmerge"]
+	trustExitCode = true
+	cmd = diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
 [push]
 	default = matching
 [credential]
