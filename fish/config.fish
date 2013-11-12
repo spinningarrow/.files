@@ -14,10 +14,12 @@ rbenv rehash >/dev/null ^&1
 set -x PAGER less
 set -x LESS '-F -g -i -M -R -S -w -X -z-4'
 
-# Set colors
+# Set colors for fish prompt
 set fish_color_command 89adff
 set fish_color_cwd ffffa4
 set fish_color_host 8cd6ff
 set fish_color_user fdd8aa
 
-set GREP_COLOR '' # use default grep color
+# Make grep use color
+set -x GREP_OPTIONS '--color=auto'
+
