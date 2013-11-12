@@ -1,5 +1,5 @@
 # Set path
-set -U fish_user_paths $fish_user_paths /Users/sahil/Documents/dev/android/adt-bundle-mac-x86_64-20130729/sdk/platform-tools /Users/sahil/Documents/dev/android/adt-bundle-mac-x86_64-20130729/sdk/tools  /usr/local/heroku/bin /usr/local/share/npm/bin /usr/local/bin /usr/local/sbin $HOME/bin
+set -x PATH $PATH /Users/sahil/Documents/dev/android/adt/sdk/platform-tools /Users/sahil/Documents/dev/android/adt/sdk/tools /usr/local/heroku/bin /usr/local/bin /usr/local/sbin $HOME/bin
 
 # Initialise rbenv
 set PATH $HOME/.rbenv/bin $PATH
