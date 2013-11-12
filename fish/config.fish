@@ -2,9 +2,9 @@
 set -x PATH $PATH /Users/sahil/Documents/dev/android/adt/sdk/platform-tools /Users/sahil/Documents/dev/android/adt/sdk/tools /usr/local/heroku/bin /usr/local/bin /usr/local/sbin $HOME/bin
 
 # Initialise rbenv
-set PATH $HOME/.rbenv/bin $PATH
-set PATH $HOME/.rbenv/shims $PATH
-rbenv rehash >/dev/null ^&1
+# Needs latest rbenv (> 0.4.0; i.e., can't use Homebrew just yet)
+set -x PATH $PATH $HOME/.rbenv/bin
+. (rbenv init -|psub)
 
 # Include aliases
 . $HOME/.files/aliases
