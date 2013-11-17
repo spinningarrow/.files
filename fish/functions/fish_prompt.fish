@@ -11,7 +11,7 @@ function fish_prompt --description 'Write out the prompt'
   # PWD
   set_color $fish_color_cwd
   # echo -n (prompt_pwd)
-  echo -n (pwd)
+  echo -n (pwd | sed -e "s|$HOME|~|")
   set_color normal
 
   __terlar_git_prompt
