@@ -1,7 +1,7 @@
 alias axel="axel -a"
 alias dl="wget -r -l 1 -np -nd"
 alias killaudio="sudo kill `ps -ax | grep 'coreaudiod' | grep 'sbin' |awk '{print $1}'`"
-alias lyrist="/Users/sahil/Documents/dev/lyrist/lyrist.js | less -XRq"
+#alias lyrist="/Users/sahil/Documents/dev/lyrist/lyrist.js | less -XRq"
 alias mou="open -a Mou"
 alias new="open -n"
 alias psgrep="ps aux | grep"
