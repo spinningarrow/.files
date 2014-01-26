@@ -7,8 +7,8 @@
 	"font_size": 13.0,
 	"ignored_packages":
 	[
-		"Markdown Preview",
-		"Vintage"
+		"Vintage",
+		"Markdown Preview"
 	],
 	"rulers":
 	[
