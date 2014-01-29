@@ -69,5 +69,5 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 defaults write com.apple.Finder NSUserKeyEquivalents -dict-add "Merge All Windows" -string "@$m"
 
 # iTunes
-defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Turn Off Shuffle" -string "@^s"
-defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Turn On Shuffle" -string "@^s"
+defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Turn Off Shuffle" -string "@$s"
+defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Turn On Shuffle" -string "@$s"
