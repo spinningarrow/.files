@@ -9,9 +9,9 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Vintage",
+		"Markdown Preview",
 		"Modific",
-		"Markdown Preview"
+		"Vintage"
 	],
 	"rulers":
 	[
