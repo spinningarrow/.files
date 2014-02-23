@@ -30,6 +30,6 @@
 	trustExitCode = true
 	cmd = diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
 [push]
-	default = matching
+	default = simple
 [credential]
 	helper = osxkeychain
