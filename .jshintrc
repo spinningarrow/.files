@@ -1,3 +1,5 @@
 {
-	"asi": true
+	"asi": true,
+	"laxcomma": true,
+	"unused": true
 }
