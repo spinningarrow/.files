@@ -1,6 +1,9 @@
 # Set path
 set -x PATH /Users/sahil/Documents/dev/android/adt/sdk/platform-tools /Users/sahil/Documents/dev/android/adt/sdk/tools /usr/local/heroku/bin /usr/local/bin /usr/local/sbin $HOME/bin $PATH
 
+# Initialise autojump
+if test -f /Users/sahil/.autojump/etc/profile.d/autojump.fish; . /Users/sahil/.autojump/etc/profile.d/autojump.fish; end
+
 # Initialise rbenv
 # Needs latest rbenv (> 0.4.0; i.e., can't use Homebrew just yet)
 set -x PATH $HOME/.rbenv/bin $PATH
