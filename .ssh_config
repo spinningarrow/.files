@@ -1,0 +1,7 @@
+# Read http://nerderati.com/2011/03/simplify-your-life-with-an-ssh-config-file/
+
+# NearlyFreeSpeech.net: sahil
+Host ssh.phx.nearlyfreespeech.net
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/nfs
+
