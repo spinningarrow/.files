@@ -7,7 +7,9 @@ if test -f /Users/sahil/.autojump/etc/profile.d/autojump.fish; . /Users/sahil/.a
 # Initialise rbenv
 # Needs latest rbenv (> 0.4.0; i.e., can't use Homebrew just yet)
 set -x PATH $HOME/.rbenv/bin $PATH
-. (rbenv init -|psub)
+if type rbenv > /dev/null
+	. (rbenv init -|psub)
+end
 
 # Include aliases
 . $HOME/.files/aliases
