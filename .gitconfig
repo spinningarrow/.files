@@ -15,9 +15,6 @@
 	sl = stash list
 	ss = stash save
 	sp = stash pop
-	sc = stash clear
-	sa = stash apply
-	up = !sh -c 'git stash && git rebase $0 && git stash pop'
 [color]
 	ui = auto
 [diff]
