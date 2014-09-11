@@ -1,0 +1,28 @@
+[user]
+	name = Sahil Bajaj
+	email = sahil29@gmail.com
+[color]
+	ui = auto
+[alias]
+	ai = add --interactive
+	co = checkout
+	dt = difftool -y -d
+	flog = log HEAD..origin --pretty=oneline
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	st = status -sb
+	sl = stash list
+	ss = stash save
+	sp = stash pop
+	sc = stash clear
+	sa = stash apply
+[core]
+	editor = vim
+	autocrlf = input
+[push]
+	default = simple
+[rerere]
+	enabled = true
+[merge]
+	conflictstyle = diff3
+[rebase]
+	stat = true
