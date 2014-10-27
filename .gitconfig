@@ -26,7 +26,5 @@
 [mergetool "diffmerge"]
 	trustExitCode = true
 	cmd = diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
-[push]
-	default = simple
 [credential]
 	helper = osxkeychain
