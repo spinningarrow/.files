@@ -3,7 +3,6 @@
 	name = Sahil Bajaj
 [core]
 	excludesfile = /Users/sahil/.gitignore
-	editor = subl -w
 	autocrlf = input
 [alias]
 	ai = add --interactive
