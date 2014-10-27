@@ -4,6 +4,7 @@
 [core]
 	excludesfile = /Users/sahil/.gitignore
 	autocrlf = input
+	editor = /usr/bin/vim
 [alias]
 	ai = add --interactive
 	co = checkout
