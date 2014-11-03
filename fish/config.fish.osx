@@ -6,12 +6,9 @@ if test -f (brew --prefix)/etc/autojump.fish
 	. (brew --prefix)/etc/autojump.fish
 end
 
-# Initialise rbenv
-# Needs latest rbenv (> 0.4.0; i.e., can't use Homebrew just yet)
-# set -x PATH $HOME/.rbenv/bin $PATH
-# if type rbenv > /dev/null
-# 	. (rbenv init -|psub)
-# end
+# Activate chruby
+source /usr/local/share/chruby/chruby.fish
+source /usr/local/share/chruby/auto.fish
 
 # Include aliases
 . $HOME/.files/aliases
