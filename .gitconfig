@@ -9,12 +9,11 @@
 	ai = add --interactive
 	co = checkout
 	dt = difftool -y -d
-	flog = log HEAD..origin --pretty=oneline
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	st = status -sb
 	sl = stash list
-	ss = stash save
-	sp = stash pop
+	d = diff
+	ds = diff --staged
 [color]
 	ui = auto
 [diff]
