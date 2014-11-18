@@ -15,6 +15,9 @@
 	sp = stash pop
 	sc = stash clear
 	sa = stash apply
+	ol = log ..origin
+	lo = log origin..
+	l1 = log -1
 [core]
 	editor = vim
 	autocrlf = input
