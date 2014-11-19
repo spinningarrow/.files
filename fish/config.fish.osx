@@ -1,5 +1,5 @@
 # Set path
-# set -x PATH /Users/sahil/Documents/dev/android/adt/sdk/platform-tools /Users/sahil/Documents/dev/android/adt/sdk/tools /usr/local/heroku/bin /usr/local/bin /usr/local/sbin $HOME/bin $PATH
+set -x PATH $HOME/bin $PATH
 
 # Initialise autojump
 if test -f (brew --prefix)/etc/autojump.fish
