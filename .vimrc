@@ -18,8 +18,8 @@ Plugin 'ervandew/supertab'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
+Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-surround'
 
 call vundle#end()
