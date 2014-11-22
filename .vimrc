@@ -33,7 +33,6 @@ set relativenumber
 
 " Custom key bindings
 map <C-n> :NERDTreeToggle<CR>
-imap <Tab> <C-P>
 
 " Plugin vim-gitgutter
 let g:gitgutter_sign_column_always = 1
