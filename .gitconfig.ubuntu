@@ -29,3 +29,5 @@
 	conflictstyle = diff3
 [rebase]
 	stat = true
+[credential]
+	helper = store
