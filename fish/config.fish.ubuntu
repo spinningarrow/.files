@@ -2,22 +2,22 @@ set -x PGDATA /var/lib/postgresql/9.2/main/
 set -x PGCONF /etc/postgresql/9.2/main
 set -x PATH /usr/lib/postgresql/9.2/bin $PATH
 
-set -x JAVA7_HOME /home/sahil/autodesk/jdk1.7.0_65
+set -x JAVA7_HOME /media/sahil/data/autodesk/jdk1.7.0_65
 set -x JAVA7_OPTS -XX:-UseSplitVerifier
 set -x JAVA_HOME $JAVA7_HOME
 set -x JAVA_OPTS $JAVA7_OPTS
 set -x PATH $JAVA_HOME $JAVA_HOME/bin $PATH
 
-set -x ANT_HOME ~/autodesk/apache-ant-1.9.3-bin/apache-ant-1.9.3
+set -x ANT_HOME /media/sahil/data/autodesk/apache-ant-1.9.3-bin/apache-ant-1.9.3
 set -x ANT_OPTS -Xmx1024m\ -XX:MaxPermSize=512m
 set -x PATH $ANT_HOME $PATH
 
-set -x WORKSPACE /home/sahil/autodesk/dev/plm-core
+set -x WORKSPACE /media/sahil/data/autodesk/dev/plm-core
 set -x DB_HOST localhost
 set -x CENTRAL_DB central
 set -x CUSTOMER_NAME
 
-set -x CATALINA_HOME /home/sahil/autodesk/apache-tomcat-7.0.30
+set -x CATALINA_HOME /home/sahil/adsk/apache-tomcat-7.0.30
 set -x JAVA_OPTS "$JAVA_OPTS -XX:MaxPermSize=512m"
 set -x JAVA_OPTS "$JAVA_OPTS -XX:+HeapDumpOnOutOfMemoryError"
 set -x JAVA_OPTS "$JAVA_OPTS -DDedicatedNotificationSenderInstance=true"
