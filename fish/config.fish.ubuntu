@@ -23,3 +23,5 @@ set -x JAVA_OPTS "$JAVA_OPTS -XX:+HeapDumpOnOutOfMemoryError"
 set -x JAVA_OPTS "$JAVA_OPTS -DDedicatedNotificationSenderInstance=true"
 
 set -x PATH ~/bin $PATH
+
+if test -f /home/sahil/.autojump/etc/profile.d/autojump.fish; . /home/sahil/.autojump/etc/profile.d/autojump.fish; end
