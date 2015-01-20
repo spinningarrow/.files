@@ -16,6 +16,7 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'ervandew/supertab'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
@@ -32,7 +33,8 @@ set number
 set relativenumber
 
 " Custom key bindings
-map <C-n> :NERDTreeToggle<CR>
+" map <C-n> :NERDTreeToggle<CR>
+map <C-k> <plug>NERDTreeTabsToggle<CR>
 
 " Plugin vim-gitgutter
 let g:gitgutter_sign_column_always = 1
@@ -40,3 +42,7 @@ highlight clear SignColumn
 highlight link GitGutterAdd SignColumn
 highlight link GitGutterChange SignColumn
 highlight link GitGutterDelete SignColumn
+
+" Plugin NERDTreeTabs
+let g:nerdtree_tabs_open_on_console_startup=1
+
