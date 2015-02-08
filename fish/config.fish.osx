@@ -2,9 +2,7 @@
 set -x PATH $HOME/bin $PATH
 
 # Initialise autojump
-if test -f (brew --prefix)/etc/autojump.fish
-	. (brew --prefix)/etc/autojump.fish
-end
+[ -f /usr/local/share/autojump/autojump.fish ]; and . /usr/local/share/autojump/autojump.fish
 
 # Activate chruby
 source /usr/local/share/chruby/chruby.fish
