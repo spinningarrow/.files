@@ -46,6 +46,12 @@ highlight link GitGutterAdd SignColumn
 highlight link GitGutterChange SignColumn
 highlight link GitGutterDelete SignColumn
 
+" Plugin Ctrl-P
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-t>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ }
+
 " Plugin neocomplcache
 let g:neocomplcache_enable_at_startup=1
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
