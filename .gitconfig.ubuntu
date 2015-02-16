@@ -24,7 +24,7 @@
 [push]
 	default = simple
 [rerere]
-	enabled = true
+	enabled = false
 [merge]
 	conflictstyle = diff3
 [rebase]
