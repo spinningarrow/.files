@@ -32,6 +32,7 @@ filetype plugin indent on
 
 " Vim settings
 syntax enable
+set cursorline
 set listchars=tab:▸—
 set mouse=a
 set nowrap
