@@ -14,7 +14,8 @@ function fish_prompt --description 'Write out the prompt'
   echo -n (pwd | sed -e "s|$HOME|~|")
   set_color normal
 
-  __terlar_git_prompt
+  # __terlar_git_prompt
+  __fish_git_prompt
   echo
 
   if not test $last_status -eq 0
