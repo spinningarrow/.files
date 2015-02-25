@@ -24,4 +24,8 @@ set -x JAVA_OPTS "$JAVA_OPTS -DDedicatedNotificationSenderInstance=true"
 
 set -x PATH ~/bin $PATH
 
+# Fish - git prompt settings (copied from config.fish.osx)
+set __fish_git_prompt_showcolorhints 'yes'
+set __fish_git_prompt_show_informative_status 'yes'
+
 if test -f /home/sahil/.autojump/etc/profile.d/autojump.fish; . /home/sahil/.autojump/etc/profile.d/autojump.fish; end
