@@ -32,6 +32,8 @@ filetype plugin indent on
 
 " Vim settings
 syntax enable
+colorscheme Monokai " must appear *after* enabling syntax highlighting
+
 set cursorline
 set listchars=tab:▸—
 set mouse=a
