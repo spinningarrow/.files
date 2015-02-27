@@ -35,6 +35,7 @@ syntax enable
 colorscheme Monokai " must appear *after* enabling syntax highlighting
 
 set cursorline
+set laststatus=2
 set listchars=tab:▸—
 set mouse=a
 set nowrap
