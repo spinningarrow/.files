@@ -47,10 +47,6 @@ map <C-k> <plug>NERDTreeTabsToggle<CR>
 
 " Plugin vim-gitgutter
 let g:gitgutter_sign_column_always=1
-highlight clear SignColumn
-highlight link GitGutterAdd SignColumn
-highlight link GitGutterChange SignColumn
-highlight link GitGutterDelete SignColumn
 
 " Plugin Ctrl-P
 let g:ctrlp_custom_ignore = 'node_modules'
