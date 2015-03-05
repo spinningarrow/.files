@@ -53,6 +53,10 @@ nmap <Leader>h :bprev<CR>
 nmap <Leader><Tab> :FixWhitespace<CR>
 map <C-k> <plug>NERDTreeTabsToggle<CR>
 
+" Plugin vim-airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
+
 " Plugin vim-gitgutter
 let g:gitgutter_sign_column_always=1
 
