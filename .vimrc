@@ -34,6 +34,7 @@ filetype plugin indent on
 syntax enable
 colorscheme Monokai " must appear *after* enabling syntax highlighting
 
+set colorcolumn=80
 set cursorline
 set laststatus=2
 set listchars=tab:▸—
