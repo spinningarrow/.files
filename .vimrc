@@ -46,11 +46,12 @@ set relativenumber
 let mapleader="\<Space>"
 nnoremap <Leader>w :w<CR>
 nmap <Leader>v :vsplit<CR>
-nmap <Leader><Leader> V
 nmap <Leader>l :bnext<CR>
 nmap <Leader>h :bprev<CR>
-nmap <Leader><Tab> :FixWhitespace<CR>
-map <C-k> <plug>NERDTreeTabsToggle<CR>
+nmap <Leader><Leader> :FixWhitespace<CR>
+nmap <Leader><Tab> :CtrlPMRU<CR>
+nmap <Leader>f :Ag<Space>
+map <Leader>k :NERDTreeToggle<CR>
 
 " Plugin vim-airline
 let g:airline#extensions#tabline#enabled = 1
