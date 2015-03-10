@@ -22,7 +22,6 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'fatih/vim-go'
-Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'tpope/vim-surround'
 Plugin 'bronson/vim-trailing-whitespace'
 
