@@ -63,10 +63,6 @@ let g:gitgutter_sign_column_always=1
 " Plugin Ctrl-P
 let g:ctrlp_match_window = 'order:ttb'
 let g:ctrlp_custom_ignore = 'node_modules'
-" let g:ctrlp_prompt_mappings = {
-"     \ 'AcceptSelection("e")': ['<c-t>'],
-"     \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
-"     \ }
 
 " Plugin neocomplcache
 let g:neocomplcache_enable_at_startup=1
