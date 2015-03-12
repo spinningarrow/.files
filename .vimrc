@@ -45,7 +45,7 @@ set relativenumber
 " Custom key bindings
 let mapleader="\<Space>"
 
-nnoremap <Leader>w :w<CR>
+nnoremap <D-s> :w<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>wq :wq<CR>
 
