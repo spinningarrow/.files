@@ -44,15 +44,18 @@ set relativenumber
 
 " Custom key bindings
 let mapleader="\<Space>"
+
 nnoremap <Leader>w :w<CR>
-nmap <Leader><Tab> :vsplit<CR>
-nmap <Leader>l :bnext<CR>
-nmap <Leader>h :bprev<CR>
+nnoremap <Leader>q :q<CR>
+nnoremap <Leader>wq :wq<CR>
+
+nmap <Leader><Tab> :set list<CR>
+nmap <Leader><S-Tab> :set nolist<CR>
 nmap <Leader><Leader> :FixWhitespace<CR>
-nmap <Leader>t :CtrlPMRU<CR>
+nmap <Leader>` :CtrlPMRU<CR>
 nmap <Leader>f :Ag<Space>
 map <Leader>k :NERDTreeToggle<CR>
-nmap <Leader>q :q<CR>
+nmap <Leader>s :vsplit<CR>
 
 " Plugin vim-airline
 let g:airline#extensions#tabline#enabled = 1
