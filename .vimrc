@@ -31,6 +31,7 @@ filetype plugin indent on
 
 " Vim settings
 syntax enable
+autocmd BufNewFile,BufRead *.json set ft=javascript " highlight JSON
 colorscheme Monokai " must appear *after* enabling syntax highlighting
 
 set colorcolumn=80
