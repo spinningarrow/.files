@@ -66,8 +66,9 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:gitgutter_sign_column_always=1
 
 " Plugin Ctrl-P
-let g:ctrlp_match_window = 'order:ttb'
-let g:ctrlp_custom_ignore = 'node_modules'
+let g:ctrlp_show_hidden=1
+let g:ctrlp_match_window='order:ttb'
+let g:ctrlp_custom_ignore='node_modules'
 
 " Plugin neocomplcache
 let g:neocomplcache_enable_at_startup=1
