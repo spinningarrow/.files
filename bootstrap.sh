@@ -5,6 +5,7 @@ OS="osx"
 
 # Symlink general files
 ln -s "$DOTFILES/.gitconfig" $HOME/
+ln -s "$DOTFILES/.gitconfig.$OS" $HOME/.gitconfig.include
 ln -s "$DOTFILES/.gitignore" $HOME/
 ln -s "$DOTFILES/.tmux.conf" $HOME/
 ln -s "$DOTFILES/.ssh_config" $HOME/.ssh/config

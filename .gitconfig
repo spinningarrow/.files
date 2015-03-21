@@ -1,24 +1,27 @@
-[user]
-	email = sahil29@gmail.com
-	name = Sahil Bajaj
-[core]
-	excludesfile = /Users/sahil/.gitignore
-	autocrlf = input
-	editor = /usr/bin/vim
+[include]
+	path = .gitconfig.include
 [alias]
 	ai = add --interactive
 	co = checkout
 	dt = difftool -y -d
-	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	l = log
+	l1 = log -1
+	ld = log --graph --decorate --oneline
+	lg = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=relative --graph
+	lh = log @{u}..
+	lu = log ..@{u}
 	st = status -sb
 	sl = stash list
 	d = diff
 	ds = diff --staged
 [color]
 	ui = auto
-[diff]
-	tool = opendiff
+[core]
+	autocrlf = input
+	editor = vim
+[merge]
+	conflictstyle = diff3
 [push]
 	default = simple
-[credential]
-	helper = osxkeychain
+[rebase]
+	stat = true
