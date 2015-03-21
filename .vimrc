@@ -40,7 +40,6 @@ set laststatus=2
 set listchars=tab:▸—
 set mouse=a
 set nowrap
-set number
 set relativenumber
 
 " Custom key bindings
