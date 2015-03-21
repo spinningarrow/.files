@@ -46,8 +46,7 @@ set relativenumber
 let mapleader="\<Space>"
 
 nnoremap <Leader>s :w<CR>
-nnoremap <Leader>q :q<CR>
-nnoremap <Leader>wq :wq<CR>
+nnoremap <Leader>q :wq<CR>
 
 nmap <Leader><Tab> :set list<CR>
 nmap <Leader><S-Tab> :set nolist<CR>
