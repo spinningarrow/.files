@@ -58,6 +58,7 @@ nmap <Leader>` :CtrlPMRU<CR>
 nmap <Leader>f :Ag<Space>
 map <Leader>k :NERDTreeToggle<CR>
 nmap <Leader>p :vsplit<CR>
+nmap <Leader>t :tabnew<CR>
 
 " Plugin vim-airline
 let g:airline#extensions#tabline#enabled = 1
