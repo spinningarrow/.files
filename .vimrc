@@ -15,13 +15,17 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'Shougo/neocomplcache.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'paredit.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'bling/vim-airline'
+Plugin 'guns/vim-clojure-static'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'tpope/vim-fireplace'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'fatih/vim-go'
+Plugin 'amdt/vim-niji'
 Plugin 'tpope/vim-surround'
 Plugin 'bronson/vim-trailing-whitespace'
 
@@ -60,21 +64,10 @@ map <Leader>k :NERDTreeToggle<CR>
 nmap <Leader>p :vsplit<CR>
 nmap <Leader>t :tabnew<CR>
 
-" Plugin vim-airline
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
-
-" Plugin vim-gitgutter
-let g:gitgutter_sign_column_always=1
-
 " Plugin Ctrl-P
 let g:ctrlp_show_hidden=1
 let g:ctrlp_match_window='order:ttb'
 let g:ctrlp_custom_ignore='node_modules'
-
-" Plugin neocomplcache
-let g:neocomplcache_enable_at_startup=1
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " Plugin NERDTree
 let g:NERDTreeShowHidden=1
@@ -82,3 +75,14 @@ let g:NERDTreeShowHidden=1
 " Plugin NERDTreeTabs
 let g:nerdtree_tabs_open_on_console_startup=1
 
+" Plugin neocomplcache
+let g:neocomplcache_enable_at_startup=1
+let g:neocomplcache_force_overwrite_completefunc=1 " for vim-clojure-static
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" Plugin vim-airline
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#fnamemod=':t'
+
+" Plugin vim-gitgutter
+let g:gitgutter_sign_column_always=1
