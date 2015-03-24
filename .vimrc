@@ -53,13 +53,13 @@ let mapleader="\<Space>"
 nnoremap <Leader>s :w<CR>
 nnoremap <Leader>q :wq<CR>
 
+nmap ` :CtrlPMRU<CR>
 nmap 1 _
 nmap 9 g_
 nmap <Tab> :set hlsearch!<CR>
 
 nmap <Leader><Tab> :set list!<CR>
 nmap <Leader><Leader> :FixWhitespace<CR>
-nmap <Leader>` :CtrlPMRU<CR>
 nmap <Leader>f :Ag<Space>
 map <Leader>k :NERDTreeToggle<CR>
 nmap <Leader>p :vsplit<CR>
