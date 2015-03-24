@@ -57,8 +57,7 @@ nmap 1 _
 nmap 9 g_
 nmap <Tab> :set hlsearch!<CR>
 
-nmap <Leader><Tab> :set list<CR>
-nmap <Leader><S-Tab> :set nolist<CR>
+nmap <Leader><Tab> :set list!<CR>
 nmap <Leader><Leader> :FixWhitespace<CR>
 nmap <Leader>` :CtrlPMRU<CR>
 nmap <Leader>f :Ag<Space>
