@@ -4,6 +4,7 @@
 	ai = add --interactive
 	co = checkout
 	dt = difftool -y -d
+	f = fetch
 	l = log
 	l1 = log -1
 	ld = log --graph --decorate --oneline
