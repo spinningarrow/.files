@@ -1,3 +1,4 @@
 .DS\_Store
 *.sw?
 *.sublime-workspace
+.lein-repl-history
