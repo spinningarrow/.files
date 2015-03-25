@@ -4,6 +4,7 @@ DOTFILES="$HOME/.files"
 OS="osx"
 
 # Symlink general files
+ln -s "$DOTFILES/.editorconfig" $HOME/
 ln -s "$DOTFILES/.gitconfig" $HOME/
 ln -s "$DOTFILES/.gitconfig.$OS" $HOME/.gitconfig.include
 ln -s "$DOTFILES/.gitignore" $HOME/
