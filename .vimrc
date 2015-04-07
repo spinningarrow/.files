@@ -53,7 +53,7 @@ let mapleader="\<Space>"
 nnoremap <Leader>s :w<CR>
 nnoremap <Leader>q :wq<CR>
 
-nmap ` :CtrlPMRU<CR>
+nmap ` :CtrlPBuffer<CR>
 nmap 1 _
 nmap 9 g_
 nmap <Tab> :set hlsearch!<CR>
