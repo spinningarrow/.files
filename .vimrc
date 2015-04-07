@@ -63,6 +63,8 @@ nmap <Leader><Leader> :FixWhitespace<CR>
 nmap <Leader>f :Ag<Space>
 map <Leader>k :NERDTreeToggle<CR>
 nmap <Leader>p :vsplit<CR>
+map <Leader>l :NERDTreeFind<CR>
+nmap <Leader>r :%s/
 nmap <Leader>t :tabnew<CR>
 
 " Plugin Ctrl-P
