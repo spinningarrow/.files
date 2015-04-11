@@ -41,6 +41,7 @@ colorscheme apprentice " must appear *after* enabling syntax highlighting
 set colorcolumn=80
 set cursorline
 set hlsearch
+set incsearch
 set laststatus=2
 set listchars=tab:▸—
 set mouse=a
