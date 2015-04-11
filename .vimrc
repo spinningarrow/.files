@@ -56,8 +56,8 @@ nnoremap <Leader>q :wq<CR>
 
 nmap ,, :tabnew ~/.files/.vimrc<CR>
 nmap ` :CtrlPBuffer<CR>
-nmap 1 _
-nmap 9 g_
+nmap g1 _
+nmap g9 g_
 nmap <Tab> :set hlsearch!<CR>
 
 nmap <Leader><Tab> :set list!<CR>
