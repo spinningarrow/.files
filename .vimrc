@@ -27,7 +27,7 @@ Plugin 'fatih/vim-go'
 Plugin 'amdt/vim-niji'
 Plugin 'guns/vim-sexp'
 Plugin 'tpope/vim-surround'
-Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'ntpeters/vim-better-whitespace'
 
 call vundle#end()
 
@@ -62,7 +62,8 @@ nmap <S-Tab> <C-o>
 
 nmap <Leader>1 :set list!<CR>
 nmap <Leader>2 :set hlsearch!<CR>
-nmap <Leader>3 :FixWhitespace<CR>
+nmap <Leader>3 :ToggleWhitespace<CR>
+nmap <Leader>4 :StripWhitespace<CR>
 
 nmap <Leader>f :Ag<Space>
 map <Leader>k :NERDTreeToggle<CR>
