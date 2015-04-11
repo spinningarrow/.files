@@ -58,6 +58,8 @@ nmap ,, :tabnew ~/.files/.vimrc<CR>
 nmap ` :CtrlPBuffer<CR>
 nmap g1 _
 nmap g9 g_
+nmap <S-Tab> <C-o>
+
 nmap <Leader>1 :set list!<CR>
 nmap <Leader>2 :set hlsearch!<CR>
 nmap <Leader>3 :FixWhitespace<CR>
