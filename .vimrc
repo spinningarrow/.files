@@ -58,10 +58,10 @@ nmap ,, :tabnew ~/.files/.vimrc<CR>
 nmap ` :CtrlPBuffer<CR>
 nmap g1 _
 nmap g9 g_
-nmap <Tab> :set hlsearch!<CR>
+nmap <Leader>1 :set list!<CR>
+nmap <Leader>2 :set hlsearch!<CR>
+nmap <Leader>3 :FixWhitespace<CR>
 
-nmap <Leader><Tab> :set list!<CR>
-nmap <Leader><Leader> :FixWhitespace<CR>
 nmap <Leader>f :Ag<Space>
 map <Leader>k :NERDTreeToggle<CR>
 map <Leader>l :NERDTreeFind<CR>
