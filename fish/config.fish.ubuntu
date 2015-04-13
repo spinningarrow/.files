@@ -1,4 +1,4 @@
-set -x TERM xterm-256color
+set -x TERM screen-256color
 
 set -x PGDATA /var/lib/postgresql/9.2/main/
 set -x PGCONF /etc/postgresql/9.2/main
