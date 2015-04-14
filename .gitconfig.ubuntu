@@ -3,3 +3,5 @@
 	name = Sahil Bajaj
 [credential]
 	helper = store
+[merge]
+	tool = meld
