@@ -61,10 +61,10 @@ nmap g1 _
 nmap g9 g_
 nmap <S-Tab> <C-o>
 
-nmap <Leader>1 :set list!<CR>
-nmap <Leader>2 :set hlsearch!<CR>
-nmap <Leader>3 :ToggleWhitespace<CR>
-nmap <Leader>4 :StripWhitespace<CR>
+nmap <Leader><Tab> :set list! list?<CR>
+nmap <Leader>1 :nohlsearch<CR>
+nmap <Leader>2 :ToggleWhitespace<CR>
+nmap <Leader><Leader> :StripWhitespace<CR>
 
 nmap <Leader>f :Ag<Space>
 map <Leader>k :NERDTreeToggle<CR>
