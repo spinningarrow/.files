@@ -18,6 +18,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'bling/vim-airline'
+Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'guns/vim-clojure-static'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'tpope/vim-fireplace'
@@ -27,7 +28,6 @@ Plugin 'fatih/vim-go'
 Plugin 'amdt/vim-niji'
 Plugin 'guns/vim-sexp'
 Plugin 'tpope/vim-surround'
-Plugin 'ntpeters/vim-better-whitespace'
 
 call vundle#end()
 
@@ -52,8 +52,8 @@ set relativenumber
 " Custom key bindings
 let mapleader="\<Space>"
 
-nnoremap <Leader>s :w<CR>
 nnoremap <Leader>q :wq<CR>
+nnoremap <Leader>w :w<CR>
 
 nmap ,, :tabnew ~/.files/.vimrc<CR>
 nmap ` :CtrlPBuffer<CR>
