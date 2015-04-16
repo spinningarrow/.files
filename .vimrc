@@ -25,7 +25,7 @@ Plugin 'tpope/vim-fireplace'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'fatih/vim-go'
-Plugin 'amdt/vim-niji'
+Plugin 'spinningarrow/vim-niji'
 Plugin 'guns/vim-sexp'
 Plugin 'tpope/vim-surround'
 
