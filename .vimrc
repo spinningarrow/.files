@@ -88,5 +88,15 @@ let g:neocomplcache_enable_at_startup=1
 let g:neocomplcache_force_overwrite_completefunc=1 " for vim-clojure-static
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
+" Plugin Syntastic
+" Syntastic: recommended settings (from help)
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Syntastic: filetype-specific settings
+let g:syntastic_javascript_checkers = ['eslint']
+
 " Plugin vim-gitgutter
 let g:gitgutter_sign_column_always=1
