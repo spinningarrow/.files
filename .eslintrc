@@ -1,0 +1,7 @@
+rules:
+    curly: [2, multi-line]
+    no-shadow: 0
+    no-use-before-define: [2, nofunc]
+    quotes: [2, single]
+    semi: 0
+    strict: 0
