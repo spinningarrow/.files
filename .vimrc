@@ -39,6 +39,7 @@ autocmd BufNewFile,BufRead *.json set ft=javascript " highlight JSON
 au FileType javascript setlocal suffixesadd=.js " make gf work with CommonJS
 colorscheme apprentice " must appear *after* enabling syntax highlighting
 
+set backspace=2 " the default OS X and Linux? vimrc files do this anyway
 set colorcolumn=80
 set cursorline
 set hlsearch
