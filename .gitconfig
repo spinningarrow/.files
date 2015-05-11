@@ -26,3 +26,5 @@
 	default = simple
 [rebase]
 	stat = true
+[rerere]
+	enabled = true
