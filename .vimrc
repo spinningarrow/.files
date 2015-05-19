@@ -58,15 +58,15 @@ nnoremap <Leader>w :w<CR>
 
 nmap ,, :tabnew ~/.files/.vimrc<CR>
 nmap <Leader>` :CtrlPBuffer<CR>
-nmap g1 _
-nmap g9 g_
 nmap <S-Tab> <C-o>
 
-nmap <Leader><Tab><Tab> :set list! list?<CR>
-nmap <Leader><Tab><Space> :StripWhitespace<CR>
-nmap <Leader><Tab>/ :nohlsearch<CR>
+nmap <Leader><Tab> :set list! list?<CR>
+nmap <Leader>- :StripWhitespace<CR>
+nmap <Leader>/ :nohlsearch<CR>
 
+map <Leader>c :checktime<CR>
 nmap <Leader>f :Ag<Space>
+map <Leader>gb :Gblame<CR>
 map <Leader>k :NERDTreeToggle<CR>
 map <Leader>l :NERDTreeFind<CR>
 nmap <Leader>p :set paste!<CR>
