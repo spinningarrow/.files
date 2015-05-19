@@ -9,8 +9,8 @@
 	l1 = log -1
 	ld = log --graph --decorate --oneline
 	lg = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=relative --graph
-	lh = log @{u}..
-	lu = log ..@{u}
+	ll = log @{u}..
+	lr = log ..@{u}
 	st = status -sb
 	sl = stash list
 	d = diff
