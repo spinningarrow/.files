@@ -64,6 +64,13 @@ nmap <Leader><Tab> :set list! list?<CR>
 nmap <Leader>- :StripWhitespace<CR>
 nmap <Leader>/ :nohlsearch<CR>
 
+nnoremap <Leader>{ :tabprevious<CR>
+nnoremap <Leader>} :tabnext<CR>
+nnoremap <Leader>L <C-w>l
+nnoremap <Leader>H <C-w>h
+nnoremap <Leader>J <C-w>j
+nnoremap <Leader>K <C-w>k
+
 map <Leader>c :checktime<CR>
 nmap <Leader>f :Ag<Space>
 map <Leader>gb :Gblame<CR>
