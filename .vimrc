@@ -74,6 +74,7 @@ nnoremap <Leader>K <C-w>k
 map <Leader>c :checktime<CR>
 nmap <Leader>f :Ag<Space>
 map <Leader>gb :Gblame<CR>
+map <Leader>gm :Gmove
 map <Leader>k :NERDTreeToggle<CR>
 map <Leader>l :NERDTreeFind<CR>
 nmap <Leader>p :set paste!<CR>
