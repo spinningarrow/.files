@@ -25,8 +25,9 @@ Plugin 'tpope/vim-fireplace'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'fatih/vim-go'
-Plugin 'spinningarrow/vim-niji'
+Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'guns/vim-sexp'
+Plugin 'tpope/vim-sexp-mappings-for-regular-people'
 Plugin 'tpope/vim-surround'
 
 call vundle#end()
@@ -96,6 +97,12 @@ let g:nerdtree_tabs_open_on_console_startup=1
 let g:neocomplcache_enable_at_startup=1
 let g:neocomplcache_force_overwrite_completefunc=1 " for vim-clojure-static
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" Plugin rainbow_parentheses
+au BufEnter *.clj RainbowParenthesesActivate
+au Syntax clojure RainbowParenthesesLoadRound
+au Syntax clojure RainbowParenthesesLoadSquare
+au Syntax clojure RainbowParenthesesLoadBraces
 
 " Plugin Syntastic
 " Syntastic: recommended settings (from help)
