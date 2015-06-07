@@ -49,7 +49,7 @@ set laststatus=2
 set listchars=tab:▸—
 set mouse=a
 set nowrap
-set relativenumber
+set number
 set ttimeoutlen=0 " same as MacVim; updates powerline immediately on Escape
 
 " Custom key bindings
@@ -81,6 +81,8 @@ map <Leader>k :NERDTreeToggle<CR>
 map <Leader>l :NERDTreeFind<CR>
 nmap <Leader>p :set paste!<CR>
 nmap <Leader>r :%s/
+nmap <Leader>sl :colorscheme seoul256-light<CR>
+nmap <Leader>sd :colorscheme apprentice<CR>
 nmap <Leader>t :tabnew<CR>
 
 " Plugin Ctrl-P
@@ -105,12 +107,12 @@ au Syntax clojure RainbowParenthesesLoadSquare
 au Syntax clojure RainbowParenthesesLoadBraces
 
 " Plugin Syntastic
-" Syntastic: recommended settings (from help)
+" -- recommended settings (from help)
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 2
 let g:syntastic_check_on_wq = 0
 
-" Syntastic: filetype-specific settings
+" -- filetype-specific settings
 let g:syntastic_javascript_checkers = ['eslint']
 
 " Plugin vim-gitgutter
