@@ -49,6 +49,7 @@ set listchars=tab:▸—
 set mouse=a
 set nowrap
 set relativenumber
+set ttimeoutlen=0 " same as MacVim; updates powerline immediately on Escape
 
 " Custom key bindings
 let mapleader="\<Space>"
