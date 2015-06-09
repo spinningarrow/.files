@@ -84,6 +84,16 @@ nmap <Leader>sl :colorscheme seoul256-light<CR>
 nmap <Leader>sd :colorscheme apprentice<CR>
 nmap <Leader>t :tabnew<CR>
 
+" Plugin airline
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+let g:airline#extensions#default#section_truncate_width = {
+  \ 'b': 79,
+  \ 'x': 60,
+  \ 'y': 88,
+  \ 'z': 80,
+  \ }
+
 " Plugin Ctrl-P
 let g:ctrlp_show_hidden=1
 let g:ctrlp_custom_ignore = '\v[\/](\.(git|hg|svn)|node_modules)$'
