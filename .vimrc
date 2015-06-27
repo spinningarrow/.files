@@ -37,6 +37,7 @@ filetype plugin indent on
 " Vim settings
 syntax enable
 autocmd BufNewFile,BufRead *.json set ft=javascript " highlight JSON
+autocmd BufNewFile,BufRead *.fish set ft=sh " highlight Fish files
 au FileType javascript setlocal suffixesadd=.js " make gf work with CommonJS
 colorscheme apprentice " must appear *after* enabling syntax highlighting
 
