@@ -21,7 +21,6 @@ Plugin 'tpope/vim-fireplace'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Shougo/neocomplcache.vim'
-" Plugin 'scrooloose/nerdtree'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'tpope/vim-repeat'
 Plugin 'guns/vim-sexp'
@@ -85,8 +84,6 @@ map <Leader>c :checktime<CR>
 nmap <Leader>f :Ag<Space>
 map <Leader>gb :Gblame<CR>
 map <Leader>gm :Gmove
-map <Leader>k :NERDTreeToggle<CR>
-map <Leader>l :NERDTreeFind<CR>
 nmap <Leader>p :set paste!<CR>
 nmap <Leader>r :%s/
 nmap <Leader>sl :colorscheme summerfruit256<CR>
@@ -106,12 +103,6 @@ let g:airline#extensions#default#section_truncate_width = {
 " Plugin Ctrl-P
 let g:ctrlp_show_hidden=1
 let g:ctrlp_custom_ignore = '\v[\/](\.(git|hg|svn)|node_modules)$'
-
-" Plugin NERDTree
-let g:NERDTreeShowHidden=1
-
-" Plugin NERDTreeTabs
-let g:nerdtree_tabs_open_on_console_startup=1
 
 " Plugin neocomplcache
 let g:neocomplcache_enable_at_startup=1
