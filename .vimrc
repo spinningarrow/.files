@@ -102,6 +102,19 @@ let g:airline#extensions#default#section_truncate_width={
   \ 'y': 88,
   \ 'z': 80,
   \ }
+let g:airline_mode_map={
+  \ '__' : '------',
+  \ 'n'  : 'N',
+  \ 'i'  : 'I',
+  \ 'R'  : 'REPLACE',
+  \ 'v'  : 'V',
+  \ 'V'  : 'V-LINE',
+  \ 'c'  : 'COMMAND',
+  \ 's'  : 'SELECT',
+  \ 'S'  : 'S-LINE',
+  \ 't'  : 'TERMINAL',
+  \ }
+let g:airline_theme='kalisi'
 
 "" Ctrl-P
 let g:ctrlp_show_hidden=1
