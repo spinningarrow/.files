@@ -29,6 +29,7 @@ Plugin 'tpope/vim-sexp-mappings-for-regular-people'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/syntastic'
 Plugin 'tomtom/tcomment_vim'
+Plugin 'christoomey/vim-tmux-navigator'
 
 call vundle#end()
 
