@@ -21,7 +21,7 @@ Plugin 'tpope/vim-fireplace'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Shougo/neocomplcache.vim'
-Plugin 'scrooloose/nerdtree'
+" Plugin 'scrooloose/nerdtree'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'tpope/vim-repeat'
 Plugin 'guns/vim-sexp'
@@ -30,6 +30,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/syntastic'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'tpope/vim-vinegar'
 
 call vundle#end()
 
