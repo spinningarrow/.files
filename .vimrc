@@ -42,9 +42,9 @@ autocmd BufNewFile,BufRead *.fish set ft=sh " highlight Fish files
 au FileType javascript setlocal suffixesadd=.js " make gf work with CommonJS
 
 " Colorscheme
-let g:gruvbox_italic = 0
-let g:gruvbox_contrast_dark = 'soft'
-let g:gruvbox_invert_selection = 0
+let g:gruvbox_italic=0
+let g:gruvbox_contrast_dark='soft'
+let g:gruvbox_invert_selection=0
 set background=dark
 colorscheme gruvbox " must appear *after* enabling syntax highlighting
 
@@ -96,7 +96,7 @@ nmap <Leader>t :tabnew<CR>
 "" Airline
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline#extensions#default#section_truncate_width = {
+let g:airline#extensions#default#section_truncate_width={
   \ 'b': 79,
   \ 'x': 60,
   \ 'y': 88,
@@ -105,7 +105,7 @@ let g:airline#extensions#default#section_truncate_width = {
 
 "" Ctrl-P
 let g:ctrlp_show_hidden=1
-let g:ctrlp_custom_ignore = '\v[\/](\.(git|hg|svn)|node_modules)$'
+let g:ctrlp_custom_ignore='\v[\/](\.(git|hg|svn)|node_modules)$'
 
 "" Gitgutter
 let g:gitgutter_sign_column_always=1
@@ -123,9 +123,9 @@ au Syntax clojure RainbowParenthesesLoadBraces
 
 "" Syntastic
 """ recommended settings (from help)
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 2
-let g:syntastic_check_on_wq = 0
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_auto_loc_list=2
+let g:syntastic_check_on_wq=0
 
 """ filetype-specific settings
-let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_checkers=['eslint']
