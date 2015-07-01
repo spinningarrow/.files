@@ -35,7 +35,7 @@ call vundle#end()
 
 filetype plugin indent on
 
-" Vim settings
+" Syntax
 syntax enable
 autocmd BufNewFile,BufRead *.json set ft=javascript " highlight JSON
 autocmd BufNewFile,BufRead *.fish set ft=sh " highlight Fish files
@@ -48,6 +48,7 @@ let g:gruvbox_invert_selection = 0
 set background=dark
 colorscheme gruvbox " must appear *after* enabling syntax highlighting
 
+" Look and feel
 set backspace=2 " the default OS X and Linux(?) vimrc files do this anyway
 set colorcolumn=80
 set cursorline
@@ -60,7 +61,7 @@ set nowrap
 set number
 set ttimeoutlen=0 " same as MacVim; updates powerline immediately on Escape
 
-" Custom key bindings
+" Key bindings
 let mapleader="\<Space>"
 
 nnoremap <Leader>q :wq<CR>
@@ -91,7 +92,8 @@ nmap <Leader>sl :colorscheme summerfruit256<CR>
 nmap <Leader>sd :colorscheme gruvbox<CR>
 nmap <Leader>t :tabnew<CR>
 
-" Plugin airline
+" Plugin settings
+"" Airline
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline#extensions#default#section_truncate_width = {
@@ -101,29 +103,29 @@ let g:airline#extensions#default#section_truncate_width = {
   \ 'z': 80,
   \ }
 
-" Plugin Ctrl-P
+"" Ctrl-P
 let g:ctrlp_show_hidden=1
 let g:ctrlp_custom_ignore = '\v[\/](\.(git|hg|svn)|node_modules)$'
 
-" Plugin neocomplcache
+"" Gitgutter
+let g:gitgutter_sign_column_always=1
+
+"" Neocomplcache
 let g:neocomplcache_enable_at_startup=1
 let g:neocomplcache_force_overwrite_completefunc=1 " for vim-clojure-static
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
-" Plugin rainbow_parentheses
+"" Rainbow parentheses
 au BufEnter *.clj RainbowParenthesesActivate
 au Syntax clojure RainbowParenthesesLoadRound
 au Syntax clojure RainbowParenthesesLoadSquare
 au Syntax clojure RainbowParenthesesLoadBraces
 
-" Plugin Syntastic
-" -- recommended settings (from help)
+"" Syntastic
+""" recommended settings (from help)
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 2
 let g:syntastic_check_on_wq = 0
 
-" -- filetype-specific settings
+""" filetype-specific settings
 let g:syntastic_javascript_checkers = ['eslint']
-
-" Plugin vim-gitgutter
-let g:gitgutter_sign_column_always=1
