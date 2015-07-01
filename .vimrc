@@ -40,9 +40,9 @@ filetype plugin indent on
 syntax enable
 autocmd BufNewFile,BufRead *.json set ft=javascript " highlight JSON
 au FileType javascript setlocal suffixesadd=.js " make gf work with CommonJS
-colorscheme apprentice " must appear *after* enabling syntax highlighting
+colorscheme zenburn " must appear *after* enabling syntax highlighting
 
-set backspace=2 " the default OS X and Linux? vimrc files do this anyway
+set backspace=2 " the default OS X and Linux(?) vimrc files do this anyway
 set colorcolumn=80
 set cursorline
 set hlsearch
@@ -83,8 +83,8 @@ map <Leader>k :NERDTreeToggle<CR>
 map <Leader>l :NERDTreeFind<CR>
 nmap <Leader>p :set paste!<CR>
 nmap <Leader>r :%s/
-nmap <Leader>sl :colorscheme seoul256-light<CR>
-nmap <Leader>sd :colorscheme apprentice<CR>
+nmap <Leader>sl :colorscheme summerfruit256<CR>
+nmap <Leader>sd :colorscheme zenburn<CR>
 nmap <Leader>t :tabnew<CR>
 
 " Plugin airline
