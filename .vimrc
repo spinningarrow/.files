@@ -51,7 +51,6 @@ colorscheme gruvbox " must appear *after* enabling syntax highlighting
 " Look and feel
 set backspace=2 " the default OS X and Linux(?) vimrc files do this anyway
 set colorcolumn=80
-set cursorline
 set hlsearch
 set incsearch
 set laststatus=2
