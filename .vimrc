@@ -51,7 +51,6 @@ colorscheme gruvbox " must appear *after* enabling syntax highlighting
 " Look and feel
 set backspace=2 " the default OS X and Linux(?) vimrc files do this anyway
 set colorcolumn=80
-set hlsearch
 set incsearch
 set laststatus=2
 set listchars=tab:▸—
@@ -72,7 +71,7 @@ nmap <S-Tab> <C-o>
 
 nmap <Leader><Tab> :set list! list?<CR>
 nmap <Leader>- :StripWhitespace<CR>
-nmap <Leader>/ :nohlsearch<CR>
+nmap <Leader>/ :set hlsearch!<CR>
 
 nnoremap <Leader>{ :tabprevious<CR>
 nnoremap <Leader>} :tabnext<CR>
