@@ -1,7 +1,11 @@
 #!/usr/bin/env sh
 
+# The directory where the dotfiles repo is clone or symlinked
 DOTFILES="$HOME/.files"
-OS="osx"
+
+# Some files have OS-specific versions (since I use both OS X and Ubuntu)
+: ${DOTFILES_OS:?"DOTFILES_OS is not set. Possible values: osx, ubuntu."}
+OS=$DOTFILES_OS
 
 # Symlink general files
 ln -s "$DOTFILES/.editorconfig" $HOME/
