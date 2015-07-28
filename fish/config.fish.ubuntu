@@ -30,4 +30,6 @@ set -x PATH ~/bin $PATH
 set __fish_git_prompt_showcolorhints 'yes'
 set __fish_git_prompt_show_informative_status 'yes'
 
-if test -f /home/sahil/.autojump/etc/profile.d/autojump.fish; . /home/sahil/.autojump/etc/profile.d/autojump.fish; end
+# Enable autojump
+# (git clone it to ~/bin)
+if test -f /home/sahil/.autojump/share/autojump/autojump.fish; . /home/sahil/.autojump/share/autojump/autojump.fish; end
