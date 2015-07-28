@@ -2,7 +2,7 @@ function fish_prompt --description 'Write out the prompt'
 	set -l last_status $status
 
   # User
-  set_color $fish_color_user
+  set_color $fish_color_quote
   echo -n (whoami)
   set_color normal
 
@@ -21,7 +21,7 @@ function fish_prompt --description 'Write out the prompt'
   if not test $last_status -eq 0
     set_color $fish_color_error
   else
-    set_color $fish_color_host
+    set_color blue
   end
 
   echo -n '∫ '
