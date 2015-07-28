@@ -28,6 +28,7 @@ Plugin 'tpope/vim-sexp-mappings-for-regular-people'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/syntastic'
 Plugin 'tomtom/tcomment_vim'
+Plugin 'tpope/vim-unimpaired'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tpope/vim-vinegar'
 
