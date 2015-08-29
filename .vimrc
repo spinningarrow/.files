@@ -20,6 +20,7 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'tpope/vim-fireplace'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'terryma/vim-multiple-cursors'
 Plugin 'Shougo/neocomplcache.vim'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'tpope/vim-repeat'
@@ -125,6 +126,21 @@ let g:ctrlp_custom_ignore='\v[\/](\.(git|hg|svn)|node_modules)$'
 
 "" Gitgutter
 let g:gitgutter_sign_column_always=1
+
+"" Multiple Cursors
+" Called once right before you start selecting multiple cursors
+function! Multiple_cursors_before()
+	if exists(':NeoCompleteLock')==2
+		exe 'NeoCompleteLock'
+	endif
+endfunction
+
+" Called once only when the multiple selection is canceled (default <Esc>)
+function! Multiple_cursors_after()
+	if exists(':NeoCompleteUnlock')==2
+		exe 'NeoCompleteUnlock'
+	endif
+endfunction
 
 "" Neocomplcache
 let g:neocomplcache_enable_at_startup=1
