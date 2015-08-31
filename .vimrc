@@ -93,7 +93,7 @@ map <Leader>gs :Gstatus<CR>
 nmap <Leader>p :set paste!<CR>
 nmap <Leader>r :%s/
 nmap <Leader>sl :colorscheme summerfruit256<CR>
-nmap <Leader>sd :colorscheme gruvbox<CR>
+nmap <Leader>sd :set background=dark<CR> :colorscheme gruvbox<CR>
 nmap <Leader>t :tabnew<CR>
 
 " Plugin settings
