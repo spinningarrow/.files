@@ -1,6 +1,7 @@
 [include]
 	path = .gitconfig.include
 [alias]
+	a = add
 	ai = add --interactive
 	co = checkout
 	dt = difftool -y -d
