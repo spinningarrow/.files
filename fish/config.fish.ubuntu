@@ -24,7 +24,7 @@ set -x JAVA_OPTS "$JAVA_OPTS -XX:MaxPermSize=512m"
 set -x JAVA_OPTS "$JAVA_OPTS -XX:+HeapDumpOnOutOfMemoryError"
 set -x JAVA_OPTS "$JAVA_OPTS -DDedicatedNotificationSenderInstance=true"
 
-set -x PATH ~/bin $PATH
+set -x PATH ~/.linuxbrew/bin ~/bin $PATH
 
 # Fish - git prompt settings (copied from config.fish.osx)
 set __fish_git_prompt_showcolorhints 'yes'
