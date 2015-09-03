@@ -3,6 +3,7 @@
 [alias]
 	a = add
 	ai = add --interactive
+	c = commit
 	co = checkout
 	dt = difftool -y -d
 	f = fetch
