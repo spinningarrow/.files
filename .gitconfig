@@ -12,7 +12,7 @@
 	lg = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=relative --graph
 	ll = log @{u}..
 	lr = log ..@{u}
-	st = status -sb
+	s = status -sb
 	sl = stash list
 	d = diff
 	ds = diff --staged
