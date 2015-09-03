@@ -1,3 +1,6 @@
+# Include aliases
+. $HOME/.files/aliases
+
 set -x TERM screen-256color
 
 set -x PGDATA /var/lib/postgresql/9.2/main/
