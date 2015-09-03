@@ -37,6 +37,8 @@ Plugin 'tpope/vim-vinegar'
 call vundle#end()
 
 filetype plugin indent on
+set encoding=utf-8
+set fileencoding=utf-8
 
 " Syntax
 syntax enable
