@@ -48,7 +48,6 @@ au FileType javascript setlocal suffixesadd=.js " make gf work with CommonJS
 
 " Colorscheme
 let g:gruvbox_italic=0
-let g:gruvbox_contrast_dark='soft'
 let g:gruvbox_invert_selection=0
 set background=dark
 colorscheme gruvbox " must appear *after* enabling syntax highlighting
@@ -129,7 +128,7 @@ let g:ctrlp_custom_ignore='\v[\/](\.(git|hg|svn)|node_modules)$'
 "" Gitgutter
 let g:gitgutter_sign_column_always=1
 
-"" Multiple Cursors
+"" Multiple Cursors and Neocomplcache
 " Called once right before you start selecting multiple cursors
 function! Multiple_cursors_before()
 	if exists(':NeoCompleteLock')==2
