@@ -7,6 +7,7 @@ rules:
     strict: 0
 ecmaFeatures:
     jsx: true
+    modules: true
 env:
     browser: true
     node: true
