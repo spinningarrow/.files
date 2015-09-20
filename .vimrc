@@ -9,7 +9,7 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'rking/ag.vim'
+Plugin 'gabesoft/vim-ags'
 Plugin 'bling/vim-airline'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'guns/vim-clojure-static'
