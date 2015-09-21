@@ -148,7 +148,7 @@ endfunction
 "" Neocomplcache
 let g:neocomplcache_enable_at_startup=1
 let g:neocomplcache_force_overwrite_completefunc=1 " for vim-clojure-static
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
 "" Rainbow parentheses
 au BufEnter *.clj RainbowParenthesesActivate
