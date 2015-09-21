@@ -86,6 +86,7 @@ nnoremap <Leader>J <C-w>j
 nnoremap <Leader>K <C-w>k
 
 map <Leader>c :checktime<CR>
+nmap <Leader>d :redraw!<CR>
 nmap <Leader>f :Ags<Space>
 map <Leader>gb :Gblame<CR>
 map <Leader>gd :Gvdiff<CR>
