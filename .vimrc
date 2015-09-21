@@ -86,7 +86,7 @@ nnoremap <Leader>J <C-w>j
 nnoremap <Leader>K <C-w>k
 
 map <Leader>c :checktime<CR>
-nmap <Leader>f :Ag<Space>
+nmap <Leader>f :Ags<Space>
 map <Leader>gb :Gblame<CR>
 map <Leader>gd :Gvdiff<CR>
 map <Leader>gg :GitGutter<CR>
