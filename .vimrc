@@ -74,9 +74,7 @@ nmap ,, :tabnew ~/.files/.vimrc<CR>
 nmap <Leader>` :CtrlPBuffer<CR>
 nmap <S-Tab> <C-o>
 
-nmap <Leader><Tab> :set list! list?<CR>
 nmap <Leader>- :StripWhitespace<CR>
-nmap <Leader>/ :set hlsearch!<CR>
 
 nnoremap <Leader>{ :tabprevious<CR>
 nnoremap <Leader>} :tabnext<CR>
