@@ -67,7 +67,7 @@ set ttimeoutlen=0 " same as MacVim; updates powerline immediately on Escape
 " Key bindings
 let mapleader="\<Space>"
 
-nnoremap <Leader>q :wq<CR>
+nnoremap <Leader>q :x<CR>
 nnoremap <Leader>w :w<CR>
 
 nmap ,, :tabnew ~/.files/.vimrc<CR>
