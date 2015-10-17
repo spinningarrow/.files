@@ -120,8 +120,13 @@ let g:airline_mode_map={
 let g:airline_theme='kalisi'
 
 "" Ctrl-P
-let g:ctrlp_show_hidden=1
-let g:ctrlp_custom_ignore='\v[\/](\.(git|hg|svn)|node_modules)$'
+let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
+      \ --ignore .git
+      \ --ignore .svn
+      \ --ignore .hg
+      \ --ignore .DS_Store
+      \ --ignore "**/*.pyc"
+      \ -g ""'
 
 "" Gitgutter
 let g:gitgutter_sign_column_always=1
