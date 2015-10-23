@@ -8,9 +8,9 @@ set -x PGCONF /etc/postgresql/9.3/main
 set -x PATH /usr/lib/postgresql/9.3/bin $PATH
 
 set -x JAVA7_HOME ~/dev/jdk1.7.0_75
+set -x JAVA8_HOME ~/dev/jdk1.8.0_65
 set -x JAVA7_OPTS -XX:-UseSplitVerifier
-set -x JAVA_HOME $JAVA7_HOME
-set -x JAVA_OPTS $JAVA7_OPTS
+set -x JAVA_HOME $JAVA8_HOME
 set -x PATH $JAVA_HOME $JAVA_HOME/bin $PATH
 
 set -x ANT_HOME ~/dev/apache-ant-1.9.3
