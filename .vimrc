@@ -60,6 +60,7 @@ set listchars=tab:▸—
 set mouse=a
 set nowrap
 set number
+set relativenumber
 set ttimeoutlen=0 " same as MacVim; updates powerline immediately on Escape
 
 " Key bindings
