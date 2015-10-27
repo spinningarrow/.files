@@ -129,6 +129,21 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
       \ --ignore "**/*.pyc"
       \ -g ""'
 
+" automatically clear cache on file save
+function! SetupCtrlP()
+	if exists("g:loaded_ctrlp") && g:loaded_ctrlp
+		augroup CtrlPExtension
+			autocmd!
+			autocmd FocusGained  * CtrlPClearCache
+			autocmd BufWritePost * CtrlPClearCache
+		augroup END
+	endif
+endfunction
+
+if has("autocmd")
+	autocmd VimEnter * :call SetupCtrlP()
+endif
+
 "" Gitgutter
 let g:gitgutter_sign_column_always=1
 
