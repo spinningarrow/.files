@@ -49,7 +49,7 @@ au FileType javascript setlocal suffixesadd=.js " make gf work with CommonJS
 let g:gruvbox_italic=0
 let g:gruvbox_invert_selection=0
 set background=dark
-colorscheme gruvbox " must appear *after* enabling syntax highlighting
+colorscheme hybrid " must appear *after* enabling syntax highlighting
 
 " Look and feel
 set backspace=2 " the default OS X and Linux(?) vimrc files do this anyway
@@ -118,7 +118,7 @@ let g:airline_mode_map={
   \ 'S'  : 'S-LINE',
   \ 't'  : 'TERMINAL',
   \ }
-let g:airline_theme='kalisi'
+let g:airline_theme='hybridline'
 
 "" Ctrl-P
 let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
