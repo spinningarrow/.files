@@ -15,7 +15,7 @@ source /usr/local/share/chruby/auto.fish
 # (copied from zsh, makes it scroll faster for some reason)
 # set -x PAGER less
 # set -x LESS '-F -g -i -M -R -S -w -X -z-4'
-set -x LESS '-R -X'
+set -x LESS '-R'
 
 # Git prompt options
 set __fish_git_prompt_showcolorhints 'yes'
