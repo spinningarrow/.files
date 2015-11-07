@@ -53,10 +53,12 @@ colorscheme hybrid " must appear *after* enabling syntax highlighting
 " Look and feel
 set backspace=2 " the default OS X and Linux(?) vimrc files do this anyway
 set colorcolumn=80
+set foldmethod=syntax
 set incsearch
 set laststatus=2
 set listchars=tab:▸—
 set mouse=a
+set nofoldenable
 set nowrap
 set number
 set relativenumber
@@ -65,12 +67,13 @@ set ttimeoutlen=0 " same as MacVim; updates powerline immediately on Escape
 " Key bindings
 let mapleader="\<Space>"
 
+nnoremap <Tab> za
+
 nnoremap <Leader>q :x<CR>
 nnoremap <Leader>w :w<CR>
 
 nmap ,, :tabnew ~/.files/.vimrc<CR>
 nmap <Leader>` :CtrlPBuffer<CR>
-nmap <S-Tab> <C-o>
 
 nmap <Leader>- :StripWhitespace<CR>
 
