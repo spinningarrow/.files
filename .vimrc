@@ -19,6 +19,7 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'tpope/vim-fireplace'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'keith/investigate.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'Shougo/neocomplcache.vim'
@@ -148,6 +149,9 @@ endif
 
 "" Gitgutter
 let g:gitgutter_sign_column_always=1
+
+"" Investigate
+let g:investigate_use_dash=1
 
 "" Multiple Cursors and Neocomplcache
 " Called once right before you start selecting multiple cursors
