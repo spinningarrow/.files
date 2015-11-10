@@ -1,3 +1,6 @@
+# Remove Ctrl-D binding
+bind --erase \cd
+
 # Include aliases
 . $HOME/.files/aliases
 
