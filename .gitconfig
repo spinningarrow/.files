@@ -3,8 +3,12 @@
 [alias]
 	a = add
 	ai = add --interactive
+	ap = add --patch
 	c = commit
 	co = checkout
+	d = diff
+	dc = diff --color-words
+	ds = diff --staged
 	dt = difftool -y -d
 	f = fetch
 	l = log
@@ -15,8 +19,6 @@
 	lr = log ..@{u}
 	s = status -sb
 	sl = stash list
-	d = diff
-	ds = diff --staged
 [color]
 	ui = auto
 [core]
