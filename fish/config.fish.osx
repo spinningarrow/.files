@@ -1,6 +1,9 @@
 # Remove Ctrl-D binding
 bind --erase \cd
 
+# Use vim key bindings
+set -g fish_key_bindings fish_vi_key_bindings
+
 # Set path
 set -x PATH $HOME/bin $PATH
 
