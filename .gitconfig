@@ -26,10 +26,12 @@
 	editor = vim
 [merge]
 	conflictstyle = diff3
+	log = true
 [push]
 	default = simple
 [rebase]
 	stat = true
+	autoSquash = true
 [rerere]
 	enabled = true
 [filter "lfs"]
