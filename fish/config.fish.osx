@@ -1,6 +1,3 @@
-# Remove Ctrl-D binding
-bind --erase \cd
-
 # Set path
 set -x PATH $HOME/bin $PATH
 
