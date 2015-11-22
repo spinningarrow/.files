@@ -68,7 +68,7 @@ set ttimeoutlen=0 " same as MacVim; updates powerline immediately on Escape
 " Key bindings
 let mapleader="\<Space>"
 
-nnoremap <Tab> za
+nnoremap <S-Tab> za
 
 nnoremap <Leader>q :x<CR>
 nnoremap <Leader>w :w<CR>
