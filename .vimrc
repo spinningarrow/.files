@@ -55,6 +55,7 @@ colorscheme hybrid " must appear *after* enabling syntax highlighting
 set backspace=2 " the default OS X and Linux(?) vimrc files do this anyway
 set colorcolumn=80
 set foldmethod=syntax
+set ignorecase
 set incsearch
 set laststatus=2
 set listchars=tab:▸—
