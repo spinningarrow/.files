@@ -82,10 +82,6 @@ nmap <Leader>- :StripWhitespace<CR>
 
 nnoremap <Leader>{ :tabprevious<CR>
 nnoremap <Leader>} :tabnext<CR>
-nnoremap <Leader>L <C-w>l
-nnoremap <Leader>H <C-w>h
-nnoremap <Leader>J <C-w>j
-nnoremap <Leader>K <C-w>k
 
 map <Leader>c :checktime<CR>
 nmap <Leader>d :redraw!<CR>
