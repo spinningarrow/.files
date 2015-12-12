@@ -121,6 +121,7 @@ let g:airline_mode_map={
   \ 'S'  : 'S-LINE',
   \ 't'  : 'TERMINAL',
   \ }
+let g:airline#extensions#hunks#enabled=0
 let g:airline_theme='hybridline'
 
 "" Ctrl-P
