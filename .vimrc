@@ -63,6 +63,7 @@ set nofoldenable
 set nowrap
 set number
 set relativenumber
+set scrolloff=1
 set ttimeoutlen=0 " same as MacVim; updates powerline immediately on Escape
 
 " Key bindings
