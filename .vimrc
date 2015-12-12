@@ -94,11 +94,12 @@ map <Leader>gd :Gvdiff<CR>
 map <Leader>gg :GitGutter<CR>
 map <Leader>gm :Gmove
 map <Leader>gs :Gstatus<CR>
-nmap <Leader>p :set paste!<CR>
+nmap <Leader>p "+p
 nmap <Leader>r :%s/
 nmap <Leader>sl :colorscheme summerfruit256<CR>
 nmap <Leader>sd :set background=dark<CR> :colorscheme gruvbox<CR>
 nmap <Leader>t :tabnew<CR>
+map <Leader>y "+y
 
 " Plugin settings
 "" Airline
