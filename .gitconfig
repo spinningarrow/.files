@@ -31,7 +31,7 @@
 	default = simple
 [rebase]
 	stat = true
-	autoSquash = true
+	autoStash = true
 [rerere]
 	enabled = true
 [filter "lfs"]
