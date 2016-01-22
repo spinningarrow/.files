@@ -4,6 +4,7 @@
 	a = add
 	ai = add --interactive
 	ap = add --patch
+	b = branch
 	c = commit
 	co = checkout
 	d = diff
