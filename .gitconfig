@@ -18,6 +18,7 @@
 	lg = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=relative --graph
 	ll = log @{u}..
 	lr = log ..@{u}
+	r = remote
 	s = status -sb
 	sl = stash list
 [color]
