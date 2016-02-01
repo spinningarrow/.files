@@ -18,7 +18,6 @@ ln -s "$DOTFILES/.ssh_config" $HOME/.ssh/config
 
 # Vim configs
 ln -s "$DOTFILES/.vimrc" $HOME/
-ln -s "$DOTFILES/.gvimrc" $HOME/
 
 # Fish config
 ln -s "$DOTFILES/fish/config.fish" $HOME/.config/fish/config.fish
