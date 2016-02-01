@@ -99,7 +99,7 @@ nmap <Leader>k :NERDTreeToggle<CR>
 nmap <Leader>p "+p
 nmap <Leader>r :%s/
 nmap <Leader>sl :colorscheme summerfruit256<CR>
-nmap <Leader>sd :set background=dark<CR> :colorscheme gruvbox<CR>
+nmap <Leader>sd :set background=dark<CR> :colorscheme hybrid<CR>
 nmap <Leader>t :tabnew<CR>
 map <Leader>y "+y
 
