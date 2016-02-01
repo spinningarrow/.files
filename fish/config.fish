@@ -24,3 +24,4 @@ set __fish_git_prompt_show_informative_status 'yes'
 # Make grep use color
 set -x GREP_OPTIONS '--color=auto'
 
+source $HOME/.config/fish/config.fish.include

@@ -1,0 +1,6 @@
+set -x PATH /Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home $PATH
+
+set -x JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home
+set -x JAVA_OPTS "$JAVA_OPTS -DDedicatedNotificationSenderInstance=true -XX:-MaxFDLimit"
+set -x CATALINA_HOME /usr/local/Cellar/tomcat7/7.0.67/libexec
+set -x GRADLE_OPTS $JAVA_OPTS
