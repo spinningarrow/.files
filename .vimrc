@@ -23,6 +23,7 @@ Plugin 'keith/investigate.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'Shougo/neocomplcache.vim'
+Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-repeat'
 Plugin 'chrisbra/Replay'
 Plugin 'guns/vim-sexp'
@@ -94,6 +95,7 @@ map <Leader>gd :Gvdiff<CR>
 map <Leader>gg :GitGutter<CR>
 map <Leader>gm :Gmove
 map <Leader>gs :Gstatus<CR>
+nmap <Leader>k :NERDTreeToggle<CR>
 nmap <Leader>p "+p
 nmap <Leader>r :%s/
 nmap <Leader>sl :colorscheme summerfruit256<CR>
