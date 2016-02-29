@@ -50,10 +50,21 @@ autocmd BufNewFile,BufRead build.boot set ft=clojure " highlight build.boot
 au FileType javascript setlocal suffixesadd=.js " make gf work with CommonJS
 
 " Colorscheme
-let g:gruvbox_italic=0
-let g:gruvbox_invert_selection=0
-set background=dark
-colorscheme hybrid " must appear *after* enabling syntax highlighting
+function! ColorschemeDark()
+	set background=dark
+	let g:airline_theme='hybridline'
+	silent! AirlineRefresh
+	colorscheme hybrid
+endfunction
+
+function! ColorschemeLight()
+	set background=light
+	let g:airline_theme='silver'
+	silent! AirlineRefresh
+	colorscheme pencil
+endfunction
+
+call ColorschemeDark()
 
 " Look and feel
 set backspace=2 " the default OS X and Linux(?) vimrc files do this anyway
@@ -100,8 +111,6 @@ map <Leader>gs :Gstatus<CR>
 nmap <Leader>k :NERDTreeToggle<CR>
 nmap <Leader>p "+p
 nmap <Leader>r :%s/
-nmap <Leader>sl :colorscheme summerfruit256<CR>
-nmap <Leader>sd :set background=dark<CR> :colorscheme hybrid<CR>
 nmap <Leader>t :tabnew<CR>
 map <Leader>y "+y
 
