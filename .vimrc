@@ -99,7 +99,8 @@ nmap <Leader>- :StripWhitespace<CR>
 nnoremap <Leader>{ :tabprevious<CR>
 nnoremap <Leader>} :tabnext<CR>
 
-map <Leader>/ :h<Space>
+nmap <Leader>/ :noh<CR>
+map <Leader><Leader> :h<Space>
 map <Leader>c :checktime<CR>
 nmap <Leader>d :redraw!<CR>
 nmap <Leader>f :Ags<Space>
