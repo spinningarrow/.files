@@ -92,7 +92,7 @@ nnoremap <S-Tab> za
 nnoremap <Leader>q :x<CR>
 nnoremap <Leader>w :w<CR>
 
-nmap ,, :tabnew ~/.files/.vimrc<CR>
+nmap <Leader>, :tabnew ~/.files/.vimrc<CR>
 nmap <Leader>` :CtrlPBuffer<CR>
 
 nmap <Leader>- :StripWhitespace<CR>
