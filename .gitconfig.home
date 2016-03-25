@@ -1,9 +1,0 @@
-[user]
-	email = sahil29@gmail.com
-	name = Sahil Bajaj
-[core]
-	excludesfile = /Users/sahil/.gitignore
-[diff]
-	tool = opendiff
-[credential]
-	helper = osxkeychain

@@ -1,5 +1,6 @@
-[include]
-	path = .gitconfig.include
+[user]
+	email = sahil29@gmail.com
+	name = Sahil Bajaj
 [alias]
 	a = add
 	ai = add --interactive
@@ -26,6 +27,9 @@
 [core]
 	autocrlf = input
 	editor = vim
+	excludesfile = /Users/sahil/.gitignore
+[credential]
+	helper = osxkeychain
 [merge]
 	conflictstyle = diff3
 	log = true

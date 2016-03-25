@@ -1,4 +1,5 @@
 alias axel="axel -a"
+alias dotfiles="git --git-dir=$HOME/dev/.files.git/ --work-tree=$HOME"
 alias dl="wget -r -l 1 -np -nd"
 alias g=git
 alias killaudio="sudo kill `ps -ax | grep 'coreaudiod' | grep 'sbin' |awk '{print $1}'`"

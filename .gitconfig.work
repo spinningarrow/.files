@@ -1,9 +1,0 @@
-[user]
-	email = sahil.bajaj@autodesk.com
-	name = Sahil Bajaj
-[core]
-	excludesfile = /Users/bajajs/.gitignore
-[diff]
-	tool = opendiff
-[credential]
-	helper = osxkeychain

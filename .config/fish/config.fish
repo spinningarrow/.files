@@ -9,7 +9,7 @@ source /usr/local/share/chruby/chruby.fish
 source /usr/local/share/chruby/auto.fish
 
 # Include aliases
-. $HOME/.files/aliases
+source $HOME/.config/fish/aliases.fish
 
 # Set default pager and options for less
 # (copied from zsh, makes it scroll faster for some reason)
@@ -23,5 +23,3 @@ set __fish_git_prompt_show_informative_status 'yes'
 
 # Make grep use color
 set -x GREP_OPTIONS '--color=auto'
-
-source $HOME/.config/fish/config.fish.include
