@@ -1,44 +1,42 @@
-" Vundle required settings
 set shell=/bin/bash
-set nocompatible
-filetype off
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" Install vim-plug if it isn't there
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall | source $MYVIMRC
+endif
 
-Plugin 'gmarik/Vundle.vim'
+call plug#begin('~/.vim/plugged')
 
-Plugin 'gabesoft/vim-ags'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'ap/vim-css-color'
-Plugin 'kien/ctrlp.vim'
-Plugin 'Raimondi/delimitMate'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'tpope/vim-fireplace'
-Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'keith/investigate.vim'
-Plugin 'pangloss/vim-javascript'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'Shougo/neocomplcache.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-repeat'
-Plugin 'chrisbra/Replay'
-Plugin 'guns/vim-sexp'
-Plugin 'tpope/vim-sexp-mappings-for-regular-people'
-Plugin 'tpope/vim-sleuth'
-Plugin 'tpope/vim-surround'
-Plugin 'scrooloose/syntastic'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'tpope/vim-vinegar'
+Plug 'gabesoft/vim-ags'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'flazz/vim-colorschemes'
+Plug 'ap/vim-css-color'
+Plug 'kien/ctrlp.vim'
+Plug 'Raimondi/delimitMate'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'tpope/vim-fireplace'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'keith/investigate.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'Shougo/neocomplcache.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-repeat'
+Plug 'guns/vim-sexp'
+Plug 'tpope/vim-sexp-mappings-for-regular-people'
+Plug 'tpope/vim-sleuth'
+Plug 'tpope/vim-surround'
+Plug 'scrooloose/syntastic'
+Plug 'tomtom/tcomment_vim'
+Plug 'tpope/vim-unimpaired'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'tpope/vim-vinegar'
 
-call vundle#end()
+call plug#end()
 
 filetype plugin indent on
 set encoding=utf-8
