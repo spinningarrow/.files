@@ -1,6 +1,7 @@
 alias axel="axel -a"
 alias dotfiles="git --git-dir=$HOME/dev/.files.git/ --work-tree=$HOME"
 alias dl="wget -r -l 1 -np -nd"
+alias fn="find . -iname"
 alias g=git
 alias killaudio="sudo kill `ps -ax | grep 'coreaudiod' | grep 'sbin' |awk '{print $1}'`"
 #alias lyrist="/Users/sahil/Documents/dev/lyrist/lyrist.js | less -XRq"
