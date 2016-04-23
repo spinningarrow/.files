@@ -8,8 +8,18 @@ this repository.
 
 ## Setup
 
-I've set up my dotfiles according to [this guide][guide]. One difference, however,
-is that the alias I'm using is `dotfiles` instead of `config`.
+I'm using [GNU Stow][stow] to manage my dotfiles without the hassle of a custom shell
+script that does the symlinking. Using `stow` is quite straightforward:
+
+    stow -t ~ git
+    stow -t ~ vim
+
+and so on to install, and
+
+    stow -t ~ -D git
+	stow -t ~ -D vim
+
+and so on to uninstall.
 
 [dotfiles]: http://dotfiles.github.io/
-[guide]: https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
+[stow]: https://www.gnu.org/software/stow/
