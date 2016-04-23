@@ -1,5 +1,4 @@
 alias axel="axel -a"
-alias dotfiles="git --git-dir=$HOME/dev/.files.git/ --work-tree=$HOME"
 alias dl="wget -r -l 1 -np -nd"
 alias fn="find . -iname"
 alias g=git
