@@ -1,3 +1,4 @@
+alias -="cd -"
 alias axel="axel -a"
 alias dl="wget -r -l 1 -np -nd"
 alias fn="find . -iname"
