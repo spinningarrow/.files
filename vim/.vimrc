@@ -146,6 +146,9 @@ let g:airline_mode_map={
 let g:airline#extensions#hunks#enabled=0
 let g:airline_theme='hybridline'
 
+"" Better Whitespace
+let g:better_whitespace_verbosity=1
+
 "" Ctrl-P
 let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
       \ --ignore .git
