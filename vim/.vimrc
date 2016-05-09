@@ -33,7 +33,6 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-repeat'
 Plug 'guns/vim-sexp'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
-Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/syntastic'
 Plug 'tomtom/tcomment_vim'
@@ -85,6 +84,8 @@ set nowrap
 set number
 set relativenumber
 set scrolloff=1
+set shiftwidth=4
+set tabstop=4
 set ttimeoutlen=0 " same as MacVim; updates powerline immediately on Escape
 
 " Key bindings
