@@ -2,13 +2,13 @@ set shell=/bin/bash
 
 " Install vim-plug if it isn't there
 if !executable('ag')
-  silent !brew install ag
+	silent !brew install ag
 endif
 
 if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall | source $MYVIMRC
+	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+		\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
 call plug#begin('~/.vim/plugged')
@@ -56,9 +56,10 @@ au FileType javascript setlocal suffixesadd=.js " make gf work with CommonJS
 " Colorscheme
 function! ColorschemeDark()
 	set background=dark
-	let g:airline_theme='hybridline'
-	silent! AirlineRefresh
-	colorscheme hybrid
+	" let g:airline_theme='hybridline'
+	" silent! AirlineRefresh
+	colorscheme tayra
+	colorscheme tropikos
 endfunction
 
 function! ColorschemeLight()
@@ -127,23 +128,23 @@ map <Leader>y "+y
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline#extensions#default#section_truncate_width={
-  \ 'b': 79,
-  \ 'x': 60,
-  \ 'y': 88,
-  \ 'z': 80,
-  \ }
+	\ 'b': 79,
+	\ 'x': 60,
+	\ 'y': 88,
+	\ 'z': 80,
+	\ }
 let g:airline_mode_map={
-  \ '__' : '------',
-  \ 'n'  : 'N',
-  \ 'i'  : 'I',
-  \ 'R'  : 'REPLACE',
-  \ 'v'  : 'V',
-  \ 'V'  : 'V-LINE',
-  \ 'c'  : 'COMMAND',
-  \ 's'  : 'SELECT',
-  \ 'S'  : 'S-LINE',
-  \ 't'  : 'TERMINAL',
-  \ }
+	\ '__' : '------',
+	\ 'n'  : 'N',
+	\ 'i'  : 'I',
+	\ 'R'  : 'REPLACE',
+	\ 'v'  : 'V',
+	\ 'V'  : 'V-LINE',
+	\ 'c'  : 'COMMAND',
+	\ 's'  : 'SELECT',
+	\ 'S'  : 'S-LINE',
+	\ 't'  : 'TERMINAL',
+	\ }
 let g:airline#extensions#hunks#enabled=0
 let g:airline_theme='hybridline'
 
@@ -152,12 +153,12 @@ let g:better_whitespace_verbosity=1
 
 "" Ctrl-P
 let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
-      \ --ignore .git
-      \ --ignore .svn
-      \ --ignore .hg
-      \ --ignore .DS_Store
-      \ --ignore "**/*.pyc"
-      \ -g ""'
+	\ --ignore .git
+	\ --ignore .svn
+	\ --ignore .hg
+	\ --ignore .DS_Store
+	\ --ignore "**/*.pyc"
+	\ -g ""'
 
 " automatically clear cache on file save
 function! SetupCtrlP()
