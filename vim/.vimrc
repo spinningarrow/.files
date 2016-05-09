@@ -20,6 +20,7 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'flazz/vim-colorschemes'
 Plug 'ap/vim-css-color'
 Plug 'kien/ctrlp.vim'
+Plug 'rizzatti/dash.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-fireplace'
@@ -105,7 +106,7 @@ nnoremap <Leader>} :tabnext<CR>
 nmap <Leader>/ :noh<CR>
 map <Leader><Leader> :h<Space>
 map <Leader>c :checktime<CR>
-nmap <Leader>d :redraw!<CR>
+nmap <silent> <Leader>d <Plug>DashSearch
 nmap <Leader>f :Ags<Space>
 map <Leader>gb :Gblame<CR>
 map <Leader>gd :Gvdiff<CR>
@@ -114,7 +115,8 @@ map <Leader>gm :Gmove
 map <Leader>gs :Gstatus<CR>
 nmap <Leader>k :NERDTreeToggle<CR>
 nmap <Leader>p "+p
-nmap <Leader>r :%s/
+nmap <Leader>r :redraw!<CR>
+nmap <Leader>s :%s/
 nmap <Leader>t :tabnew<CR>
 map <Leader>y "+y
 
@@ -169,9 +171,6 @@ endif
 
 "" Gitgutter
 let g:gitgutter_sign_column_always=1
-
-"" Investigate
-let g:investigate_use_dash=1
 
 "" Multiple Cursors and Neocomplcache
 " Called once right before you start selecting multiple cursors
