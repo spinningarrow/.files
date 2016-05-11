@@ -58,9 +58,6 @@ au FileType javascript setlocal suffixesadd=.js " make gf work with CommonJS
 " Colorscheme
 function! ColorschemeDark()
 	set background=dark
-	" let g:airline_theme='hybridline'
-	" silent! AirlineRefresh
-	colorscheme tayra
 	colorscheme tropikos
 endfunction
 
