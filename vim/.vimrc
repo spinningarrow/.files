@@ -41,6 +41,8 @@ Plug 'tpope/vim-unimpaired'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-vinegar'
 
+packadd! matchit
+
 call plug#end()
 
 filetype plugin indent on
