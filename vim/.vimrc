@@ -74,6 +74,7 @@ call ColorschemeDark()
 
 " Look and feel
 set backspace=2 " the default OS X and Linux(?) vimrc files do this anyway
+set clipboard=unnamed
 set colorcolumn=80
 set foldmethod=syntax
 set hlsearch
