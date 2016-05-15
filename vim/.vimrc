@@ -54,6 +54,7 @@ syntax enable
 autocmd BufNewFile,BufRead *.fish set ft=sh " highlight Fish files
 autocmd BufNewFile,BufRead build.boot set ft=clojure " highlight build.boot
 au FileType javascript setlocal suffixesadd=.js " make gf work with CommonJS
+au FileType markdown setlocal tw=79 spell
 
 " Colorscheme
 function! ColorschemeDark()
