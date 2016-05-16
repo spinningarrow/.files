@@ -6,7 +6,7 @@
 	ai = add --interactive
 	ap = add --patch
 	b = branch
-	c = commit
+	c = commit -v
 	co = checkout
 	d = diff
 	dc = diff --color-words
