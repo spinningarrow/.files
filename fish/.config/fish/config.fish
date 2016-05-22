@@ -8,8 +8,8 @@ set -x PATH $HOME/bin $PATH
 source /usr/local/share/chruby/chruby.fish
 source /usr/local/share/chruby/auto.fish
 
-# Include aliases
-source $HOME/.config/fish/aliases.fish
+# Include abbreviations
+source $HOME/.config/fish/abbreviations.fish
 
 # Set default pager and options for less
 # (copied from zsh, makes it scroll faster for some reason)
