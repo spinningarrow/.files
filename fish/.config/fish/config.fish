@@ -1,6 +1,9 @@
 # Set path
 set -x PATH $HOME/bin $PATH
 
+# Include abbreviations
+source $HOME/.config/fish/abbreviations.fish
+
 # Initialise autojump
 [ -f /usr/local/share/autojump/autojump.fish ]; and . /usr/local/share/autojump/autojump.fish
 
@@ -8,18 +11,13 @@ set -x PATH $HOME/bin $PATH
 source /usr/local/share/chruby/chruby.fish
 source /usr/local/share/chruby/auto.fish
 
-# Include abbreviations
-source $HOME/.config/fish/abbreviations.fish
-
-# Set default pager and options for less
-# (copied from zsh, makes it scroll faster for some reason)
-# set -x PAGER less
-# set -x LESS '-F -g -i -M -R -S -w -X -z-4'
-set -x LESS '-R'
-
 # Git prompt options
 set __fish_git_prompt_showcolorhints 'yes'
 set __fish_git_prompt_show_informative_status 'yes'
 
-# Make grep use color
+# Set program options
 set -x GREP_OPTIONS '--color=auto'
+set -x LESS '-R'
+
+# Set environment variables
+set -x JAVA_HOME (/usr/libexec/java_home)
