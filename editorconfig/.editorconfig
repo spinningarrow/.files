@@ -1,0 +1,5 @@
+root = true
+
+[package.json]
+indent_style = space
+indent_size = 2
