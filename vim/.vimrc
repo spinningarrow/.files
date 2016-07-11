@@ -109,7 +109,6 @@ nnoremap <Leader>{ :tabprevious<CR>
 nnoremap <Leader>} :tabnext<CR>
 
 nmap <Leader>/ :noh<CR>
-map <Leader><Leader> :h<Space>
 map <Leader>c :checktime<CR>
 nmap <silent> <Leader>d <Plug>DashSearch
 nmap <Leader>f :Ags<Space>
