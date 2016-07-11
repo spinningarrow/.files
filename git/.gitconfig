@@ -28,6 +28,7 @@
 	autocrlf = input
 	editor = vim
 	excludesfile = /Users/sahil/.gitignore
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [credential]
 	helper = osxkeychain
 [merge]
