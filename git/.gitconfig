@@ -1,6 +1,6 @@
 [user]
-	email = sahil29@gmail.com
 	name = Sahil Bajaj
+	useConfigOnly = true
 [alias]
 	a = add
 	ai = add --interactive
@@ -12,6 +12,7 @@
 	dc = diff --color-words
 	ds = diff --staged
 	dt = difftool -y -d
+	e = config user.email
 	f = fetch
 	l = log
 	l1 = log -1
