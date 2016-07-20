@@ -7,4 +7,5 @@ abbr -a l 'ls -lahp'
 abbr -a lx 'less -X'
 abbr -a q exit
 abbr -a ql 'qlmanage -p'
+abbr -a ta 'type -a'
 abbr -a v vim
