@@ -24,6 +24,7 @@ Plug 'rizzatti/dash.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
+Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
@@ -176,6 +177,10 @@ endfunction
 if has("autocmd")
 	autocmd VimEnter * :call SetupCtrlP()
 endif
+
+"" Emmet
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
 
 "" Gitgutter
 let g:gitgutter_sign_column_always=1
