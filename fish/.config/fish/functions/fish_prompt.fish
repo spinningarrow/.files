@@ -5,19 +5,12 @@ function fish_prompt --description 'Write out the prompt'
 
   set -l last_status $status
 
-  # User
-  set_color $username_color
-  echo -n (whoami)
-  set_color normal
-
-  echo -n ' in '
-
   # PWD
   set_color $fish_color_cwd
-  echo -n (pwd | sed -e "s|$HOME|~|") # echo -n (prompt_pwd)
+  echo -n (pwd | sed -e "s|$HOME|~|")
   set_color normal
 
-  __fish_git_prompt # __terlar_git_prompt
+  __fish_git_prompt
   echo
 
   if not test $last_status -eq 0
