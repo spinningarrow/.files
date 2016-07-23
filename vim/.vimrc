@@ -78,7 +78,6 @@ call ColorschemeDark()
 set backspace=2 " the default OS X and Linux(?) vimrc files do this anyway
 set clipboard=unnamed
 set colorcolumn=80
-set foldmethod=syntax
 set hlsearch
 set ignorecase
 set incsearch
@@ -185,24 +184,8 @@ autocmd FileType html,css EmmetInstall
 "" Gitgutter
 let g:gitgutter_sign_column_always=1
 
-"" Multiple Cursors and Neocomplcache
-" Called once right before you start selecting multiple cursors
-function! Multiple_cursors_before()
-	if exists(':NeoCompleteLock')==2
-		exe 'NeoCompleteLock'
-	endif
-endfunction
-
-" Called once only when the multiple selection is canceled (default <Esc>)
-function! Multiple_cursors_after()
-	if exists(':NeoCompleteUnlock')==2
-		exe 'NeoCompleteUnlock'
-	endif
-endfunction
-
 "" Neocomplcache
 let g:neocomplcache_enable_at_startup=1
-let g:neocomplcache_force_overwrite_completefunc=1 " for vim-clojure-static
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
 "" Syntastic
