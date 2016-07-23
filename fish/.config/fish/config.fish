@@ -7,6 +7,9 @@ source $HOME/.config/fish/abbreviations.fish
 # Initialise autojump
 [ -f /usr/local/share/autojump/autojump.fish ]; and . /usr/local/share/autojump/autojump.fish
 
+# Initialize commajump
+source ~/.config/fish/functions/__commajump_add.fish
+
 # Activate chruby
 source /usr/local/share/chruby/chruby.fish
 source /usr/local/share/chruby/auto.fish
@@ -21,5 +24,3 @@ set -x LESS '-R'
 
 # Set environment variables
 set -x JAVA_HOME (/usr/libexec/java_home)
-
-source ~/.config/fish/functions/commajump_add.fish
