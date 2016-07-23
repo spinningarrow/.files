@@ -21,3 +21,5 @@ set -x LESS '-R'
 
 # Set environment variables
 set -x JAVA_HOME (/usr/libexec/java_home)
+
+source ~/.config/fish/functions/commajump_add.fish
