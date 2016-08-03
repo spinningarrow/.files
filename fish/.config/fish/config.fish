@@ -4,9 +4,6 @@ set -x PATH $HOME/bin $PATH
 # Include abbreviations
 source $HOME/.config/fish/abbreviations.fish
 
-# Initialise autojump
-[ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
-
 # Initialize commajump
 source ~/.config/fish/functions/__commajump_add.fish
 
