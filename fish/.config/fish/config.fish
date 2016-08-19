@@ -22,5 +22,3 @@ set -x LESS '-R'
 # Set environment variables
 set -x JAVA_HOME (/usr/libexec/java_home)
 
-# Merge history when pressing up
-bind -k up 'history --merge ; up-or-search'
