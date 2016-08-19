@@ -1,10 +1,15 @@
 set shell=/bin/bash
 
-" Install vim-plug if it isn't there
+" Install executables needed by certain plugins
 if !executable('ag')
 	silent !brew install ag
 endif
 
+if !executable('editorconfig')
+	silent !brew install editorconfig
+endif
+
+" Install vim-plug if it isn't there
 if empty(glob('~/.vim/autoload/plug.vim'))
 	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
 		\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -177,6 +182,9 @@ endfunction
 if has("autocmd")
 	autocmd VimEnter * :call SetupCtrlP()
 endif
+
+"" Editorconfig
+let g:EditorConfig_core_mode = 'external_command'
 
 "" Emmet
 let g:user_emmet_install_global = 0
