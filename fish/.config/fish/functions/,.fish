@@ -1,5 +1,5 @@
 function , --description 'Commajump'
-	set found_paths (grep -i $argv ~/.commajump | grep -v (pwd)\$)
+	set found_paths (grep $argv ~/.commajump | grep -v (pwd)\$)
 	set found_folders (printf '%s\n' $found_paths | xargs basename | grep -in $argv)
 
 	if test (count $found_folders) -ne 0
