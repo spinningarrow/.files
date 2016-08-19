@@ -18,6 +18,7 @@ set __fish_git_prompt_show_informative_status 'yes'
 # Set program options
 set -x GREP_OPTIONS '--color=auto'
 set -x LESS '-R'
+set -x HOMEBREW_AUTO_UPDATE_SECS 86400
 
 # Set environment variables
 set -x JAVA_HOME (/usr/libexec/java_home)
