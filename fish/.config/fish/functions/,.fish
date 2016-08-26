@@ -6,5 +6,5 @@ function , --description 'Commajump'
 		set found_paths $found_paths[(printf '%s\n' $found_folders | cut -d':' -f1 | paste -d' ' -s -)]
 	end
 
-	cd (printf '%s\n' $found_paths | uniq -c | sort -nr | head -1 | tr -s ' ' | cut -d' ' -f3)
+	cd (printf '%s\n' $found_paths | uniq -c | sort -nr | head -1 | tr -s ' ' | cut -d' ' -f3-)
 end
