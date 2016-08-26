@@ -3,3 +3,7 @@ root = true
 [package.json]
 indent_style = space
 indent_size = 2
+
+[*.{rb, erb}]
+indent_style = space
+indent_size = 2
