@@ -42,6 +42,7 @@ Plug 'tpope/vim-rails', { 'for': 'ruby' }
 Plug 'tpope/vim-repeat'
 Plug 'guns/vim-sexp', { 'for': 'clojure' }
 Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
+Plug 'AndrewRadev/sideways.vim'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/syntastic'
 Plug 'ternjs/tern_for_vim', { 'for': 'javascript' }
@@ -115,6 +116,8 @@ nmap <Leader>- :StripWhitespace<CR>
 nnoremap <Leader>{ :tabprevious<CR>
 nnoremap <Leader>} :tabnext<CR>
 
+nmap <Leader>< :SidewaysLeft<CR>
+nmap <Leader>> :SidewaysRight<CR>
 nmap <Leader>/ :noh<CR>
 map <Leader>c :checktime<CR>
 nmap <silent> <Leader>d <Plug>DashSearch
