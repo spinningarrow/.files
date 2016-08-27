@@ -37,6 +37,7 @@
 	tool = vimdiff
 [push]
 	default = simple
+	followTags = true
 [rebase]
 	stat = true
 	autoStash = true
