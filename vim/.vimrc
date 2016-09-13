@@ -66,10 +66,10 @@ autocmd BufNewFile,BufRead build.boot set ft=clojure " highlight build.boot
 au FileType javascript setlocal suffixesadd=.js " make gf work with CommonJS
 au FileType markdown setlocal tw=79 spell
 
-" Colorscheme
+" Colors and colorscheme
 function! ColorschemeDark()
 	set background=dark
-	colorscheme iceberg
+	colorscheme hybrid
 endfunction
 
 function! ColorschemeLight()
@@ -79,6 +79,9 @@ function! ColorschemeLight()
 	colorscheme pencil
 endfunction
 
+let &t_8f="\e[38;2;%ld;%ld;%ldm"
+let &t_8b="\e[48;2;%ld;%ld;%ldm"
+set termguicolors
 call ColorschemeDark()
 
 " Look and feel
