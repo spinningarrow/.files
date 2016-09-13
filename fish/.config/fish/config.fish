@@ -20,6 +20,9 @@ set -x GREP_OPTIONS '--color=auto'
 set -x LESS '-R'
 set -x HOMEBREW_AUTO_UPDATE_SECS 86400
 
-# Set environment variables
+# Set dev environment paths
 set -x JAVA_HOME (/usr/libexec/java_home)
-
+if test (which go)
+	set -x GOPATH ~/dev/golang
+	set -x PATH $GOPATH/bin $PATH
+end
