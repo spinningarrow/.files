@@ -55,6 +55,11 @@ packadd! matchit
 
 call plug#end()
 
+" Setup TernJS if this is the first time
+if !isdirectory(glob("~/.vim/plugged/tern_for_vim/node_modules"))
+	!cd ~/.vim/plugged/tern_for_vim && npm install
+endif
+
 filetype plugin indent on
 set encoding=utf-8
 set fileencoding=utf-8
