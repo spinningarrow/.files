@@ -35,7 +35,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'keith/investigate.vim'
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
-Plug 'Shougo/neocomplcache.vim'
+Plug 'Shougo/neocomplete.vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'digitaltoad/vim-pug', { 'for': 'pug' }
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
@@ -208,9 +208,15 @@ autocmd FileType html,css EmmetInstall
 "" Gitgutter
 let g:gitgutter_sign_column_always=1
 
-"" Neocomplcache
-let g:neocomplcache_enable_at_startup=1
-inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+"" Neocomplete
+let g:neocomplete#enable_at_startup=1
+let g:neocomplete#enable_smart_case=1
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 "" Syntastic
 """ recommended settings (from help)
