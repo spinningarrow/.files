@@ -195,6 +195,9 @@ if has("autocmd")
 	autocmd VimEnter * :call SetupCtrlP()
 endif
 
+"" delimitMate
+let delimitMate_expand_cr = 1
+
 "" Editorconfig
 let g:EditorConfig_core_mode = 'external_command'
 
