@@ -37,11 +37,10 @@ Plug 'keith/investigate.vim'
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'html'] }
 Plug 'Shougo/neocomplete.vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'bhurlow/vim-parinfer'
 Plug 'digitaltoad/vim-pug', { 'for': 'pug' }
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
 Plug 'tpope/vim-repeat'
-Plug 'guns/vim-sexp', { 'for': 'clojure' }
-Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
 Plug 'AndrewRadev/sideways.vim'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/syntastic'
