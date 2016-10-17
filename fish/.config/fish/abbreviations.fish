@@ -1,5 +1,6 @@
 abbr -a - 'cd -'
 abbr -a axel 'axel -a'
+abbr -a b 'brew'
 abbr -a dl 'wget -r -l 1 -np -nd'
 abbr -a fn 'find . -iname'
 abbr -a g git
