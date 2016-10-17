@@ -40,6 +40,7 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'bhurlow/vim-parinfer'
 Plug 'digitaltoad/vim-pug', { 'for': 'pug' }
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
+Plug 'luochen1990/rainbow'
 Plug 'tpope/vim-repeat'
 Plug 'AndrewRadev/sideways.vim'
 Plug 'tpope/vim-surround'
@@ -70,6 +71,7 @@ autocmd BufNewFile,BufRead *.tmux.conf set ft=sh " highlight Tmux conf
 autocmd BufNewFile,BufRead build.boot set ft=clojure " highlight build.boot
 au FileType javascript setlocal suffixesadd=.js " make gf work with CommonJS
 au FileType markdown setlocal tw=79 spell
+au FileType clojure :RainbowToggle
 
 " Colors and colorscheme
 function! ColorschemeDark()
@@ -216,6 +218,9 @@ autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
+"" Rainbow
+let g:rainbow_active=0
 
 "" Syntastic
 """ recommended settings (from help)
