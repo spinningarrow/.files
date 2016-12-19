@@ -51,6 +51,10 @@ Plug 'tpope/vim-unimpaired'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-vinegar'
 
+" Experimental plugins
+Plug 'metakirby5/codi.vim'
+Plug 'vimwiki/vimwiki'
+
 packadd! matchit
 
 call plug#end()
