@@ -53,7 +53,6 @@ Plug 'tpope/vim-vinegar'
 
 " Experimental plugins
 Plug 'metakirby5/codi.vim'
-Plug 'vimwiki/vimwiki'
 
 packadd! matchit
 
