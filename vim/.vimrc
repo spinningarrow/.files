@@ -36,7 +36,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'keith/investigate.vim'
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'html'] }
 Plug 'Shougo/neocomplete.vim'
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'bhurlow/vim-parinfer'
 Plug 'digitaltoad/vim-pug', { 'for': 'pug' }
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
@@ -140,7 +139,6 @@ map <Leader>gd :Gvdiff<CR>
 map <Leader>gg :GitGutter<CR>
 map <Leader>gm :Gmove
 map <Leader>gs :Gstatus<CR>
-nmap <Leader>k :NERDTreeToggle<CR>
 nmap <Leader>p "+p
 nmap <Leader>r :redraw!<CR>
 nmap <Leader>s :%s/
