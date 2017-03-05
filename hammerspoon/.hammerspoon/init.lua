@@ -1,6 +1,6 @@
 hs.window.animationDuration = 0
 
-local oldXYWH = {}
+local oldIdXYWH = {}
 
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "H", function()
   local win = hs.window.focusedWindow()
@@ -8,7 +8,7 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "H", function()
   local screen = win:screen()
   local max = screen:frame()
 
-  oldXYWH = {f.x, f.y, f.w, f.h}
+  oldIdXYWH = {win:id(), f.x, f.y, f.w, f.h}
 
   f.x = max.x
   f.y = max.y
@@ -23,7 +23,7 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "L", function()
   local screen = win:screen()
   local max = screen:frame()
 
-  oldXYWH = {f.x, f.y, f.w, f.h}
+  oldIdXYWH = {win:id(), f.x, f.y, f.w, f.h}
 
   f.x = max.w / 2
   f.y = max.y
@@ -38,7 +38,7 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "K", function()
   local screen = win:screen()
   local max = screen:frame()
 
-  oldXYWH = {f.x, f.y, f.w, f.h}
+  oldIdXYWH = {win:id(), f.x, f.y, f.w, f.h}
 
   f.x = max.x
   f.y = max.y
@@ -53,7 +53,7 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "J", function()
   local screen = win:screen()
   local max = screen:frame()
 
-  oldXYWH = {f.x, f.y, f.w, f.h}
+  oldIdXYWH = {win:id(), f.x, f.y, f.w, f.h}
 
   f.x = max.w / 2 - f.w / 2
   f.y = max.h / 2 - f.h / 2
@@ -64,9 +64,13 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "U", function()
   local win = hs.window.focusedWindow()
   local f = win:frame()
 
-  f.x = oldXYWH[1]
-  f.y = oldXYWH[2]
-  f.w = oldXYWH[3]
-  f.h = oldXYWH[4]
+  if win:id() ~= oldIdXYWH[1] then
+	  return
+  end
+
+  f.x = oldIdXYWH[2]
+  f.y = oldIdXYWH[3]
+  f.w = oldIdXYWH[4]
+  f.h = oldIdXYWH[5]
   win:setFrame(f)
 end)
