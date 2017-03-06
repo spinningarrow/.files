@@ -55,8 +55,8 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "J", function()
 
   oldIdXYWH = {win:id(), f.x, f.y, f.w, f.h}
 
-  f.x = max.w / 2 - f.w / 2
-  f.y = max.h / 2 - f.h / 2
+  f.x = max.x + (max.w / 2 - f.w / 2)
+  f.y = max.y + (max.h / 2 - f.h / 2)
   win:setFrame(f)
 end)
 
