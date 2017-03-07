@@ -5,7 +5,7 @@ set -x PATH $HOME/bin $PATH
 source $HOME/.config/fish/abbreviations.fish
 
 # Initialize commajump
-source ~/.config/fish/functions/__commajump_add.fish
+source $HOME/.config/fish/functions/__commajump_add.fish
 
 # Activate chruby
 [ -f /usr/local/share/chruby/chruby.fish ]; and source /usr/local/share/chruby/chruby.fish
