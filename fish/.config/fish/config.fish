@@ -1,5 +1,5 @@
 # Set path
-set -x PATH $HOME/bin $PATH
+set --universal fish_user_paths $fish_user_paths $HOME/bin
 
 # Include abbreviations
 source $HOME/.config/fish/abbreviations.fish
