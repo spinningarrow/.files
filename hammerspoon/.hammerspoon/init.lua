@@ -74,3 +74,29 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "U", function()
   f.h = oldIdXYWH[5]
   win:setFrame(f)
 end)
+
+hs.hotkey.bind({"cmd", "alt", "ctrl"}, "=", function()
+  local win = hs.window.focusedWindow()
+  local f = win:frame()
+
+  oldIdXYWH = {win:id(), f.x, f.y, f.w, f.h}
+
+  f.x = f.x - 25
+  f.y = f.y - 25
+  f.w = f.w + 50
+  f.h = f.h + 50
+  win:setFrame(f)
+end)
+
+hs.hotkey.bind({"cmd", "alt", "ctrl"}, "-", function()
+  local win = hs.window.focusedWindow()
+  local f = win:frame()
+
+  oldIdXYWH = {win:id(), f.x, f.y, f.w, f.h}
+
+  f.x = f.x + 25
+  f.y = f.y + 25
+  f.w = f.w - 50
+  f.h = f.h - 50
+  win:setFrame(f)
+end)
