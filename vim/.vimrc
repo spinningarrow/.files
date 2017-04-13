@@ -21,6 +21,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'gabesoft/vim-ags'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'w0rp/ale'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'flazz/vim-colorschemes'
 Plug 'ap/vim-css-color', { 'for': 'css' }
@@ -43,7 +44,6 @@ Plug 'luochen1990/rainbow'
 Plug 'tpope/vim-repeat'
 Plug 'AndrewRadev/sideways.vim'
 Plug 'tpope/vim-surround'
-Plug 'scrooloose/syntastic'
 Plug 'ternjs/tern_for_vim', { 'for': 'javascript' }
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-unimpaired'
@@ -227,14 +227,5 @@ let g:netrw_liststyle=3
 "" Rainbow
 let g:rainbow_active=0
 
-"" Syntastic
-""" recommended settings (from help)
-let g:syntastic_always_populate_loc_list=1
-let g:syntastic_auto_loc_list=2
-let g:syntastic_check_on_wq=0
-
 "" TernJS
 let g:tern_map_keys=1
-
-""" filetype-specific settings
-let g:syntastic_javascript_checkers=['eslint']
