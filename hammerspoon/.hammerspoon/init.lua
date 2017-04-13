@@ -101,6 +101,10 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "-", function()
   win:setFrame(f)
 end)
 
+hs.hotkey.bind({"cmd", "alt", "ctrl"}, "m", function()
+  hs.application.launchOrFocus("MacVim")
+end)
+
 -- Reload config when config file changes
 function reloadConfig(files)
     doReload = false
