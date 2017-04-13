@@ -221,9 +221,6 @@ autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
-"" netrw
-let g:netrw_liststyle=3
-
 "" Rainbow
 let g:rainbow_active=0
 
