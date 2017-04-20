@@ -46,6 +46,7 @@ Plug 'AndrewRadev/sideways.vim'
 Plug 'tpope/vim-surround'
 Plug 'ternjs/tern_for_vim', { 'for': 'javascript' }
 Plug 'tomtom/tcomment_vim'
+Plug 'benmills/vimux'
 Plug 'tpope/vim-unimpaired'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-vinegar'
@@ -123,6 +124,7 @@ nnoremap <Leader>w :w<CR>
 
 nmap <Leader>, :tabnew ~/.vimrc<CR>
 nmap <Leader>` :CtrlPBuffer<CR>
+nmap <Leader>! :VimuxPromptCommand<CR>
 
 nmap <Leader>- :StripWhitespace<CR>
 
