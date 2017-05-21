@@ -125,7 +125,8 @@ nnoremap <Leader>w :w<CR>
 
 nmap <Leader>, :tabnew ~/.vimrc<CR>
 nmap <Leader>` :CtrlPBuffer<CR>
-nmap <Leader>! :VimuxPromptCommand<CR>
+nmap <Leader>1 :VimuxPromptCommand<CR>
+nmap <Leader>! :VimuxRunLastCommand<CR>
 
 nmap <Leader>- :StripWhitespace<CR>
 
