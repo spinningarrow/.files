@@ -9,5 +9,6 @@ abbr -a lx 'less -X'
 abbr -a o 'open .'
 abbr -a q exit
 abbr -a ql 'qlmanage -p'
+abbr -a t 'tmux'
 abbr -a ta 'type -a'
 abbr -a v vim
