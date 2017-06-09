@@ -235,5 +235,5 @@ let g:tern_map_keys=1
 augroup SourceVimrcOnSave
 	autocmd!
 	autocmd BufWritePost .vimrc source $MYVIMRC
-	AirlineRefresh
+	silent! AirlineRefresh
 augroup end
