@@ -230,3 +230,10 @@ let g:rainbow_active=0
 
 "" TernJS
 let g:tern_map_keys=1
+
+" Automatically apply vimrc changes on save
+augroup SourceVimrcOnSave
+	autocmd!
+	autocmd BufWritePost .vimrc source $MYVIMRC
+	AirlineRefresh
+augroup end
