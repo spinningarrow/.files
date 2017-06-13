@@ -19,8 +19,6 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'gabesoft/vim-ags'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'w0rp/ale'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'flazz/vim-colorschemes'
@@ -86,8 +84,6 @@ endfunction
 
 function! ColorschemeLight()
 	set background=light
-	let g:airline_theme='silver'
-	silent! AirlineRefresh
 	colorscheme pencil
 endfunction
 
@@ -114,6 +110,11 @@ set scrolloff=1
 set shiftwidth=4
 set tabstop=4
 set ttimeoutlen=0 " same as MacVim; updates powerline immediately on Escape
+
+set statusline=
+set statusline +=\ %f%h%m%r%w
+set statusline +=%=%{fugitive#statusline()}
+set statusline +=%=\ %y
 
 " Key bindings
 let mapleader="\<Space>"
@@ -151,30 +152,6 @@ nmap <Leader>t :tabnew<CR>
 map <Leader>y "+y
 
 " Plugin settings
-"" Airline
-let g:airline_left_sep=''
-let g:airline_right_sep=''
-let g:airline#extensions#default#section_truncate_width={
-	\ 'b': 79,
-	\ 'x': 60,
-	\ 'y': 88,
-	\ 'z': 80,
-	\ }
-let g:airline_mode_map={
-	\ '__' : '------',
-	\ 'n'  : 'N',
-	\ 'i'  : 'I',
-	\ 'R'  : 'REPLACE',
-	\ 'v'  : 'V',
-	\ 'V'  : 'V-LINE',
-	\ 'c'  : 'COMMAND',
-	\ 's'  : 'SELECT',
-	\ 'S'  : 'S-LINE',
-	\ 't'  : 'TERMINAL',
-	\ }
-let g:airline#extensions#hunks#enabled=0
-let g:airline_theme='hybridline'
-
 "" Better Whitespace
 let g:better_whitespace_verbosity=1
 
@@ -235,5 +212,4 @@ let g:tern_map_keys=1
 augroup SourceVimrcOnSave
 	autocmd!
 	autocmd BufWritePost .vimrc source $MYVIMRC
-	silent! AirlineRefresh
 augroup end
