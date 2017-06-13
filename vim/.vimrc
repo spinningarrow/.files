@@ -69,9 +69,9 @@ set fileencoding=utf-8
 
 " Syntax
 syntax enable
-autocmd BufNewFile,BufRead *.fish set ft=sh " highlight Fish files
-autocmd BufNewFile,BufRead *.tmux.conf set ft=sh " highlight Tmux conf
-autocmd BufNewFile,BufRead build.boot set ft=clojure " highlight build.boot
+autocmd BufNewFile,BufRead *.fish set ft=sh
+autocmd BufNewFile,BufRead *.tmux.conf set ft=sh
+autocmd BufNewFile,BufRead build.boot set ft=clojure
 au FileType javascript setlocal suffixesadd=.js " make gf work with CommonJS
 au FileType markdown setlocal tw=79 spell
 au FileType clojure :RainbowToggle
