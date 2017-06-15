@@ -119,21 +119,13 @@ set statusline +=%=\ %y
 " Key bindings
 let mapleader="\<Space>"
 
-nnoremap <S-Tab> za
-
-nnoremap <Leader>q :x<CR>
 nnoremap <Leader>w :w<CR>
 
 nmap <Leader>, :tabnew ~/.vimrc<CR>
 nmap <Leader>` :CtrlPBuffer<CR>
 nmap <Leader>1 :VimuxPromptCommand<CR>
 nmap <Leader>! :VimuxRunLastCommand<CR>
-
 nmap <Leader>- :StripWhitespace<CR>
-
-nnoremap <Leader>{ :tabprevious<CR>
-nnoremap <Leader>} :tabnext<CR>
-
 nmap <Leader>< :SidewaysLeft<CR>
 nmap <Leader>> :SidewaysRight<CR>
 nmap <Leader>/ :noh<CR>
@@ -145,11 +137,8 @@ map <Leader>gd :Gvdiff<CR>
 map <Leader>gg :GitGutter<CR>
 map <Leader>gm :Gmove
 map <Leader>gs :Gstatus<CR>
-nmap <Leader>p "+p
 nmap <Leader>r :redraw!<CR>
 nmap <Leader>s :%s/
-nmap <Leader>t :tabnew<CR>
-map <Leader>y "+y
 
 " Plugin settings
 "" Better Whitespace
