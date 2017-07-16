@@ -130,3 +130,15 @@ ctrlDoublePress.action = function()
    -- hs.eventtap.keyStroke("", "2")
 end
 
+hs.hotkey.bind({"cmd", "alt", "ctrl"}, "p", function()
+  local success, result = hs.osascript.javascript([[
+    let spotify = Application('Spotify')
+    ;`${spotify.currentTrack.artist()}: ${spotify.currentTrack.name()} (${spotify.playerState()})`
+  ]])
+
+  if success then
+    hs.alert.show(result)
+  else
+    hs.alert.show("Unable to fetch song information.")
+  end
+end)
