@@ -133,8 +133,9 @@ end
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "p", function()
   local success, result = hs.osascript.javascript([[
     let spotify = Application('Spotify')
+    const stateIndicator = spotify => spotify.playerState() === 'playing' ? '▶️' : '⏸'
     spotify.running() ?
-      `${spotify.currentTrack.artist()}: ${spotify.currentTrack.name()} (${spotify.playerState()})` :
+      `${stateIndicator(spotify)} ${spotify.currentTrack.artist()}: ${spotify.currentTrack.name()}` :
       'Spotify is not running'
   ]])
 
