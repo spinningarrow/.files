@@ -101,10 +101,6 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "-", function()
   win:setFrame(f)
 end)
 
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "m", function()
-  hs.application.launchOrFocus("MacVim")
-end)
-
 local configReloader = require('config-reloader')
 configReloader.init()
 
