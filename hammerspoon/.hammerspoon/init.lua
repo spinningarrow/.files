@@ -120,15 +120,5 @@ end
 local myWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
 hs.alert.show("Config loaded")
 
-
-ctrlDoublePress = require("ctrlDoublePress")
-ctrlDoublePress.timeFrame = 0.5
-ctrlDoublePress.action = function()
-   -- hs.alert.show("Ctrl pressed twice")
-   -- hs.eventtap.keyStroke({"ctrl"}, "`")
-   -- hs.eventtap.keyStroke("", "3")
-   -- hs.eventtap.keyStroke("", "2")
-end
-
 local nowPlaying = require('now-playing')
 nowPlaying.init()
