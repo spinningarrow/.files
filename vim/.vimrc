@@ -42,6 +42,7 @@ Plug 'digitaltoad/vim-pug', { 'for': 'pug' }
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
 Plug 'luochen1990/rainbow'
 Plug 'tpope/vim-repeat'
+Plug 'google/vim-searchindex'
 Plug 'AndrewRadev/sideways.vim'
 Plug 'tpope/vim-surround'
 Plug 'ternjs/tern_for_vim', { 'for': 'javascript' }
