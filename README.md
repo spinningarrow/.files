@@ -1,25 +1,32 @@
 # .files
 
-My [dotfiles][]. Feel free to use them however you
-like.
+Personal configuration files.
 
-The git history is a good place to look if you are curious about something in
-this repository.
+## Install
 
-## Setup
+1. Install [GNU Stow][stow]
 
-I'm using [GNU Stow][stow] to manage my dotfiles without the hassle of a custom shell
-script that does the symlinking. Using `stow` is quite straightforward:
+       brew install stow
 
-    stow -t ~ git
-    stow -t ~ vim
+2. Clone this repository to the home directory
 
-and so on to install, and
+       git clone https://github.com/spinningarrow/.files ~
 
-    stow -t ~ -D git
-	stow -t ~ -D vim
+3. Install a particular configuration using stow
 
-and so on to uninstall.
+       cd ~/.files
+       stow fish
+	
+Other useful `stow` options:
+
+- `-R`: restow
+- `-D`: delete
+
+## Related
+
+- [spinningarrow/up][up]
+- [dotfiles][]
 
 [dotfiles]: http://dotfiles.github.io/
 [stow]: https://www.gnu.org/software/stow/
+[up]: https://github.com/spinningarrow/up
