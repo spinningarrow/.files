@@ -4,7 +4,6 @@ abbr -a b 'brew'
 abbr -a dl 'wget -r -l 1 -np -nd'
 abbr -a fn 'find . -iname'
 abbr -a g git
-abbr -a grep 'grep --color=auto'
 abbr -a l 'ls -lahp'
 abbr -a lx 'less -X'
 abbr -a o 'open .'
