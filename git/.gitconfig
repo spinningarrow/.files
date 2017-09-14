@@ -31,7 +31,7 @@
 [core]
 	autocrlf = input
 	editor = vim
-	excludesfile = /Users/sahil/.gitignore
+	excludesfile = ~/.gitignore
 [credential]
 	helper = osxkeychain
 [merge]
