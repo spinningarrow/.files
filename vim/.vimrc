@@ -68,7 +68,9 @@ set encoding=utf-8
 set fileencoding=utf-8
 
 " Syntax
-syntax enable
+if !exists("g:syntax_on")
+	syntax enable
+endif
 autocmd BufNewFile,BufRead *.fish set ft=sh
 autocmd BufNewFile,BufRead *.tmux.conf set ft=sh
 autocmd BufNewFile,BufRead build.boot set ft=clojure
