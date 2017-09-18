@@ -179,7 +179,7 @@ let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
 
 "" Gitgutter
-let g:gitgutter_sign_column_always=1
+set signcolumn=yes
 
 "" Neocomplete
 let g:neocomplete#enable_at_startup=1
