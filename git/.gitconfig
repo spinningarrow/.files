@@ -26,6 +26,7 @@
 	r = remote
 	s = status -sb
 	sl = stash list
+	g = grep
 [color]
 	ui = auto
 [core]
