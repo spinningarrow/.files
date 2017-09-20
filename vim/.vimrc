@@ -27,16 +27,15 @@ Plug 'kien/ctrlp.vim'
 Plug 'rizzatti/dash.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
+" Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'keith/investigate.vim'
-Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'html'] }
 Plug 'Shougo/neocomplete.vim'
 Plug 'bhurlow/vim-parinfer'
-Plug 'digitaltoad/vim-pug', { 'for': 'pug' }
+Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
 Plug 'luochen1990/rainbow'
 Plug 'tpope/vim-repeat'
