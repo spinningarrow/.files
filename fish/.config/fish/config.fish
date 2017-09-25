@@ -12,7 +12,6 @@ set __fish_git_prompt_showcolorhints 'yes'
 set __fish_git_prompt_show_informative_status 'yes'
 
 # Set program options
-set -x GREP_OPTIONS '--color=auto'
 set -x HOMEBREW_AUTO_UPDATE_SECS 86400
 
 # Set dev environment paths
