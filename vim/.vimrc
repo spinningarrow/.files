@@ -27,7 +27,6 @@ Plug 'kien/ctrlp.vim'
 Plug 'rizzatti/dash.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'editorconfig/editorconfig-vim'
-" Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'tpope/vim-fugitive'
