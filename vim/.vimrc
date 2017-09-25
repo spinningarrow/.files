@@ -33,6 +33,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'keith/investigate.vim'
 Plug 'Shougo/neocomplete.vim'
+Plug 'osyo-manga/vim-over'
 Plug 'bhurlow/vim-parinfer'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
