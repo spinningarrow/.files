@@ -139,7 +139,7 @@ map <Leader>gg :GitGutter<CR>
 map <Leader>gm :Gmove
 map <Leader>gs :Gstatus<CR>
 nmap <Leader>r :redraw!<CR>
-nmap <Leader>s :%s/
+nmap <Leader>s :OverCommandLine<CR>%s/
 
 " Plugin settings
 "" Better Whitespace
