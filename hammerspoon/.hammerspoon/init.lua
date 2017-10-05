@@ -6,3 +6,7 @@ configReloader.init()
 
 local nowPlaying = require('now-playing')
 nowPlaying.init()
+
+hs.hotkey.bind({"cmd", "alt", "ctrl", "shift"}, "l", function()
+	hs.caffeinate.lockScreen()
+end)
