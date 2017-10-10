@@ -20,3 +20,7 @@ if test (which go)
 	set -x GOPATH ~/dev/golang
 	set -x PATH $GOPATH/bin $PATH
 end
+
+if which direnv > /dev/null
+	eval (direnv hook fish)
+end
