@@ -1,6 +1,5 @@
 [user]
 	name = Sahil Bajaj
-	useConfigOnly = true
 	email = sahil29@gmail.com
 [includeIf "gitdir:~/dev.tw/"]
 	path = ~/dev.tw/.gitconfig
