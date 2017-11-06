@@ -1,12 +1,35 @@
 local module = {}
 
 module.init = function()
-	local oldIdXYWH = {}
+	DimensionsHistory = (function()
+		local history = {}
 
-	originalDimensions = function(win, f)
-		  oldIdXYWH = {win:id(), f.x, f.y, f.w, f.h}
-		  return oldIdXYWH
-	end
+		return {
+			push = function(win)
+				local f = win:frame()
+				local originalDimensions = {
+					x = f.x,
+					y = f.y,
+					w = f.w,
+					h = f.h,
+				}
+
+				if history[win:id()] and not history[win:id()][20] then
+					table.insert(history[win:id()], originalDimensions)
+				else
+					history[win:id()] = { originalDimensions }
+				end
+			end,
+
+			pop = function(win)
+				if not history[win:id()] then
+					return nil
+				end
+
+				return table.remove(history[win:id()])
+			end,
+		}
+	end)()
 
 	updatedFrame = function(win, dimensionUpdates)
 		local f = win:frame()
@@ -25,7 +48,7 @@ module.init = function()
 			local win = hs.window.focusedWindow()
 			local f = win:frame()
 
-			oldIdXYWH = originalDimensions(win, f)
+			DimensionsHistory.push(win)
 			win:setFrame(updatedFrame(win, dimensionUpdates))
 		end
 	end
@@ -100,14 +123,15 @@ module.init = function()
 	  local win = hs.window.focusedWindow()
 	  local f = win:frame()
 
-	  if win:id() ~= oldIdXYWH[1] then
-		  return
-	  end
+	  previousDimensions = DimensionsHistory.pop(win)
 
-	  f.x = oldIdXYWH[2]
-	  f.y = oldIdXYWH[3]
-	  f.w = oldIdXYWH[4]
-	  f.h = oldIdXYWH[5]
+	  if not previousDimensions then return end
+
+	  f.x = previousDimensions.x
+	  f.y = previousDimensions.y
+	  f.w = previousDimensions.w
+	  f.h = previousDimensions.h
+
 	  win:setFrame(f)
 	end)
 end
