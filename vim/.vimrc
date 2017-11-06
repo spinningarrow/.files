@@ -22,7 +22,7 @@ Plug 'gabesoft/vim-ags'
 Plug 'w0rp/ale'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'flazz/vim-colorschemes'
-Plug 'ap/vim-css-color', { 'for': ['css', 'scss', 'html'] }
+Plug 'ap/vim-css-color'
 Plug 'kien/ctrlp.vim'
 Plug 'rizzatti/dash.vim'
 Plug 'Raimondi/delimitMate'
