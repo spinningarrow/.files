@@ -61,6 +61,20 @@ module.init = function()
 		["h"] = halfHeight,
 	}))
 
+	hs.hotkey.bind({"cmd", "alt", "ctrl"}, "K", updateWindow({
+		["x"] = maxX,
+		["y"] = maxY,
+		["w"] = maxWidth,
+		["h"] = halfHeight,
+	}))
+
+	hs.hotkey.bind({"cmd", "alt", "ctrl"}, "F", updateWindow({
+		["x"] = maxX,
+		["y"] = maxY,
+		["w"] = maxWidth,
+		["h"] = maxHeight,
+	}))
+
 	hs.hotkey.bind({"cmd", "alt", "ctrl"}, "C", updateWindow({
 		["x"] = function(max, f) return max.x + (max.w / 2 - f.w / 2) end,
 		["y"] = function(max, f) return max.y + (max.h / 2 - f.h / 2) end,
