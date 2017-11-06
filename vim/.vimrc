@@ -71,7 +71,6 @@ set fileencoding=utf-8
 if !exists("g:syntax_on")
 	syntax enable
 endif
-autocmd BufNewFile,BufRead *.fish set ft=sh
 autocmd BufNewFile,BufRead *.tmux.conf set ft=sh
 autocmd BufNewFile,BufRead build.boot set ft=clojure
 au FileType javascript setlocal suffixesadd=.js " make gf work with CommonJS
