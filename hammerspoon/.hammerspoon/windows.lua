@@ -8,7 +8,8 @@ module.init = function()
 		  return oldIdXYWH
 	end
 
-	updateDimensions = function(win, f, dimensionUpdates)
+	updatedFrame = function(win, dimensionUpdates)
+		local f = win:frame()
 		local max = win:screen():frame()
 
 		f.x = dimensionUpdates.x and dimensionUpdates.x(max, f) or f.x
@@ -16,7 +17,7 @@ module.init = function()
 		f.w = dimensionUpdates.w and dimensionUpdates.w(max, f) or f.w
 		f.h = dimensionUpdates.h and dimensionUpdates.h(max, f) or f.h
 
-		win:setFrame(f)
+		return f
 	end
 
 	updateWindow = function(dimensionUpdates)
@@ -25,12 +26,11 @@ module.init = function()
 			local f = win:frame()
 
 			oldIdXYWH = originalDimensions(win, f)
-			updateDimensions(win, f, dimensionUpdates)
+			win:setFrame(updatedFrame(win, dimensionUpdates))
 		end
 	end
 
-	maxX = function(max) return max.x end
-	maxY = function(max) return max.y end
+	zero = function() return 0 end
 
 	halfWidth = function(max) return max.w / 2 end
 	maxWidth = function(max) return max.w end
@@ -38,63 +38,65 @@ module.init = function()
 	halfHeight = function(max) return max.h / 2 end
 	maxHeight = function(max) return max.h end
 
+	local prefix = { 'cmd', 'alt', 'ctrl' }
+
 	hs.window.animationDuration = 0
 
-	hs.hotkey.bind({"cmd", "alt", "ctrl"}, "H", updateWindow({
-		["x"] = maxX,
-		["y"] = maxY,
-		["w"] = halfWidth,
-		["h"] = maxHeight,
+	hs.hotkey.bind(prefix, 'H', updateWindow({
+		x = zero,
+		y = zero,
+		w = halfWidth,
+		h = maxHeight,
 	}))
 
-	hs.hotkey.bind({"cmd", "alt", "ctrl"}, "L", updateWindow({
-		["x"] = halfWidth,
-		["y"] = maxY,
-		["w"] = halfWidth,
-		["h"] = maxHeight,
+	hs.hotkey.bind(prefix, 'L', updateWindow({
+		x = halfWidth,
+		y = zero,
+		w = halfWidth,
+		h = maxHeight,
 	}))
 
-	hs.hotkey.bind({"cmd", "alt", "ctrl"}, "J", updateWindow({
-		["x"] = maxX,
-		["y"] = halfHeight,
-		["w"] = maxWidth,
-		["h"] = halfHeight,
+	hs.hotkey.bind(prefix, 'J', updateWindow({
+		x = zero,
+		y = halfHeight,
+		w = maxWidth,
+		h = halfHeight,
 	}))
 
-	hs.hotkey.bind({"cmd", "alt", "ctrl"}, "K", updateWindow({
-		["x"] = maxX,
-		["y"] = maxY,
-		["w"] = maxWidth,
-		["h"] = halfHeight,
+	hs.hotkey.bind(prefix, 'K', updateWindow({
+		x = zero,
+		y = zero,
+		w = maxWidth,
+		h = halfHeight,
 	}))
 
-	hs.hotkey.bind({"cmd", "alt", "ctrl"}, "F", updateWindow({
-		["x"] = maxX,
-		["y"] = maxY,
-		["w"] = maxWidth,
-		["h"] = maxHeight,
+	hs.hotkey.bind(prefix, 'F', updateWindow({
+		x = zero,
+		y = zero,
+		w = maxWidth,
+		h = maxHeight,
 	}))
 
-	hs.hotkey.bind({"cmd", "alt", "ctrl"}, "C", updateWindow({
-		["x"] = function(max, f) return max.x + (max.w / 2 - f.w / 2) end,
-		["y"] = function(max, f) return max.y + (max.h / 2 - f.h / 2) end,
+	hs.hotkey.bind(prefix, 'C', updateWindow({
+		x = function(max, f) return max.x + (max.w / 2 - f.w / 2) end,
+		y = function(max, f) return max.y + (max.h / 2 - f.h / 2) end,
 	}))
 
-	hs.hotkey.bind({"cmd", "alt", "ctrl"}, "=", updateWindow({
-		["x"] = function(max, f) return f.x - 25 end,
-		["y"] = function(max, f) return f.y - 25 end,
-		["w"] = function(max, f) return f.w + 50 end,
-		["h"] = function(max, f) return f.h + 50 end,
+	hs.hotkey.bind(prefix, '=', updateWindow({
+		x = function(max, f) return f.x - 25 end,
+		y = function(max, f) return f.y - 25 end,
+		w = function(max, f) return f.w + 50 end,
+		h = function(max, f) return f.h + 50 end,
 	}))
 
-	hs.hotkey.bind({"cmd", "alt", "ctrl"}, "-", updateWindow({
-		["x"] = function(max, f) return f.x + 25 end,
-		["y"] = function(max, f) return f.y + 25 end,
-		["w"] = function(max, f) return f.w - 50 end,
-		["h"] = function(max, f) return f.h - 50 end,
+	hs.hotkey.bind(prefix, '-', updateWindow({
+		x = function(max, f) return f.x + 25 end,
+		y = function(max, f) return f.y + 25 end,
+		w = function(max, f) return f.w - 50 end,
+		h = function(max, f) return f.h - 50 end,
 	}))
 
-	hs.hotkey.bind({"cmd", "alt", "ctrl"}, "U", function()
+	hs.hotkey.bind(prefix, 'U', function()
 	  local win = hs.window.focusedWindow()
 	  local f = win:frame()
 
