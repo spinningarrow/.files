@@ -16,10 +16,6 @@ set -x HOMEBREW_AUTO_UPDATE_SECS 86400
 
 # Set dev environment paths
 set -x JAVA_HOME (/usr/libexec/java_home)
-if test (which go)
-	set -x GOPATH ~/dev/golang
-	set -x PATH $GOPATH/bin $PATH
-end
 
 if which direnv > /dev/null
 	eval (direnv hook fish)
