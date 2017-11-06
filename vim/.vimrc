@@ -99,6 +99,7 @@ set clipboard=unnamed
 set colorcolumn=80
 set hlsearch
 set ignorecase
+set smartcase
 set incsearch
 set laststatus=2
 set listchars=tab:▸—
