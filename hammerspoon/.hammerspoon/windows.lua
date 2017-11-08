@@ -81,7 +81,7 @@ module.init = function()
 
 	hs.hotkey.bind(prefix, 'J', updateWindow({
 		x = zero,
-		y = halfHeight,
+		y = function(max) return halfHeight(max) + 23 end, -- weird offset bug
 		w = maxWidth,
 		h = halfHeight,
 	}))
