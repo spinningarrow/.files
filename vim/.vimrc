@@ -196,6 +196,9 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 "" netrw
 let g:netrw_liststyle = 3
 
+"" Over
+let g:over#command_line#enable_import_commandline_map = 0 " for vim-searchindex
+
 "" Rainbow
 let g:rainbow_active=0
 
