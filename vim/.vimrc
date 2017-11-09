@@ -9,6 +9,10 @@ if !executable('editorconfig')
 	silent !brew install editorconfig
 endif
 
+if !executable('fzf')
+	silent !brew install fzf
+endif
+
 " Install vim-plug if it isn't there
 if empty(glob('~/.vim/autoload/plug.vim'))
 	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -30,6 +34,8 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'tpope/vim-fugitive'
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'keith/investigate.vim'
 Plug 'Shougo/neocomplete.vim'
