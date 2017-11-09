@@ -14,6 +14,7 @@ module.init = function()
 					h = f.h,
 				}
 
+				-- TODO fix this; it remembers in blocks of 20
 				if history[win:id()] and not history[win:id()][20] then
 					table.insert(history[win:id()], originalDimensions)
 				else
