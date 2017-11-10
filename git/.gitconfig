@@ -14,7 +14,6 @@
 	dc = diff --color-words
 	ds = diff --staged
 	dt = difftool -y -d
-	e = config user.email
 	f = fetch
 	l = log
 	l1 = log -1
