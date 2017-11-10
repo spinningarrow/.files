@@ -1,6 +1,7 @@
 # .files
 
-Personal configuration files.
+Personal configuration files, using [brew bundle][] to manage dependencies, and
+[stow][] to install dotfiles.
 
 ## Install
 
@@ -30,3 +31,4 @@ Other useful `stow` options:
 [dotfiles]: http://dotfiles.github.io/
 [stow]: https://www.gnu.org/software/stow/
 [up]: https://github.com/spinningarrow/up
+[brew bundle]: https://github.com/Homebrew/homebrew-bundle
