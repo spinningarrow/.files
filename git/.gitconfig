@@ -1,6 +1,6 @@
 [user]
 	name = Sahil Bajaj
-	email = sahil29@gmail.com
+	email = spinningarrow@users.noreply.github.com
 [includeIf "gitdir:~/dev.tw/"]
 	path = ~/dev.tw/.gitconfig
 [alias]
