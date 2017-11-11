@@ -86,7 +86,7 @@ au FileType clojure :RainbowToggle
 " Colors and colorscheme
 function! ColorschemeDark()
 	set background=dark
-	colorscheme onedark
+	colorscheme spacegray
 endfunction
 
 function! ColorschemeLight()
