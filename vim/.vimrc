@@ -130,7 +130,9 @@ let mapleader="\<Space>"
 nnoremap <Leader>w :w<CR>
 
 nmap <Leader>, :tabnew ~/.vimrc<CR>
-nmap <Leader>` :CtrlPBuffer<CR>
+nmap <Leader>` :Buffers<CR>
+nmap <Leader>0 :GFiles<CR>
+nmap <Leader>9 :Files<CR>
 nmap <Leader>1 :VimuxPromptCommand<CR>
 nmap <Leader>! :VimuxRunLastCommand<CR>
 nmap <Leader>- :StripWhitespace<CR>
