@@ -97,7 +97,7 @@ endfunction
 let &t_8f="\e[38;2;%ld;%ld;%ldm"
 let &t_8b="\e[48;2;%ld;%ld;%ldm"
 set termguicolors
-call ColorschemeDark()
+silent! call ColorschemeDark()
 
 " Look and feel
 set backspace=2 " the default OS X and Linux(?) vimrc files do this anyway
