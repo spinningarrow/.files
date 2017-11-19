@@ -60,7 +60,8 @@ packadd! matchit
 call plug#end()
 
 " Setup TernJS if this is the first time
-if !isdirectory(glob("~/.vim/plugged/tern_for_vim/node_modules"))
+if !isdirectory(glob("~/.vim/plugged/tern_for_vim/node_modules")) &&
+			\ isdirectory(glob("~/.vim/plugged/tern_for_vim"))
 	if !executable('node')
 		silent !brew install node
 	endif
