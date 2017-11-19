@@ -27,7 +27,6 @@ Plug 'w0rp/ale'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'flazz/vim-colorschemes'
 Plug 'ap/vim-css-color'
-Plug 'kien/ctrlp.vim'
 Plug 'rizzatti/dash.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'editorconfig/editorconfig-vim'
@@ -153,30 +152,6 @@ nmap <Leader>s :OverCommandLine<CR>%s/
 " Plugin settings
 "" Better Whitespace
 let g:better_whitespace_verbosity=1
-
-"" Ctrl-P
-let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
-	\ --ignore .git
-	\ --ignore .svn
-	\ --ignore .hg
-	\ --ignore .DS_Store
-	\ --ignore "**/*.pyc"
-	\ -g ""'
-
-" automatically clear cache on file save
-function! SetupCtrlP()
-	if exists("g:loaded_ctrlp") && g:loaded_ctrlp
-		augroup CtrlPExtension
-			autocmd!
-			autocmd FocusGained  * CtrlPClearCache
-			autocmd BufWritePost * CtrlPClearCache
-		augroup END
-	endif
-endfunction
-
-if has("autocmd")
-	autocmd VimEnter * :call SetupCtrlP()
-endif
 
 "" delimitMate
 let delimitMate_expand_cr = 1
