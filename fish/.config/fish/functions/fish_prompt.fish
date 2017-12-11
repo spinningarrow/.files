@@ -5,6 +5,11 @@ function fish_prompt --description 'Write out the prompt'
 
 	set -l last_status $status
 
+	# Nix
+	set_color $fish_color_operator
+	test $IN_NIX_SHELL; and echo -n '[nix] '
+	set_color normal
+
 	# PWD
 	set_color $fish_color_cwd
 	echo -n (pwd | sed -e "s|$HOME|~|")
