@@ -29,6 +29,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'ap/vim-css-color'
 Plug 'rizzatti/dash.vim'
 Plug 'Raimondi/delimitMate'
+Plug 'junegunn/vim-easy-align'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
