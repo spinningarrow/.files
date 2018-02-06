@@ -130,9 +130,6 @@ let mapleader="\<Space>"
 nnoremap <Leader>w :w<CR>
 
 nmap <Leader>, :tabnew ~/.vimrc<CR>
-nmap <Leader>` :Buffers<CR>
-nmap <Leader>0 :GFiles<CR>
-nmap <Leader>9 :Files<CR>
 nmap <Leader>1 :VimuxPromptCommand<CR>
 nmap <Leader>! :VimuxRunLastCommand<CR>
 nmap <Leader>- :StripWhitespace<CR>
@@ -147,6 +144,9 @@ map <Leader>gd :Gvdiff<CR>
 map <Leader>gg :GitGutter<CR>
 map <Leader>gm :Gmove
 map <Leader>gs :Gstatus<CR>
+nmap <Leader>p :Files<CR>
+nmap <Leader>P :GFiles<CR>
+nmap <Leader>q :Buffers<CR>
 nmap <Leader>r :redraw!<CR>
 nmap <Leader>s :OverCommandLine<CR>%s/
 
