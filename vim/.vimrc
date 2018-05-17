@@ -42,7 +42,6 @@ Plug 'Shougo/neocomplete.vim'
 Plug 'osyo-manga/vim-over'
 Plug 'bhurlow/vim-parinfer'
 Plug 'sheerun/vim-polyglot'
-Plug 'prettier/vim-prettier'
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
 Plug 'luochen1990/rainbow'
 Plug 'tpope/vim-repeat'
