@@ -7,7 +7,7 @@ function fish_prompt --description 'Write out the prompt'
 
 	# Nix
 	set_color $fish_color_operator
-	test $IN_NIX_SHELL; and echo -n '[nix] '
+	test (echo $PATH | grep /nix/store); and echo -n '[nix] '
 	set_color normal
 
 	# PWD
