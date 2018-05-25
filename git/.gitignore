@@ -2,6 +2,3 @@
 *.sw?
 *.sublime-workspace
 .lein-repl-history
-.nrepl-port
-node_modules
-.venv
