@@ -151,9 +151,6 @@ nmap <Leader>r :redraw!<CR>
 nmap <Leader>s :OverCommandLine<CR>%s/
 
 " Plugin settings
-"" Better Whitespace
-let g:better_whitespace_verbosity=1
-
 "" delimitMate
 let delimitMate_expand_cr = 1
 
