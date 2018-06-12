@@ -62,7 +62,7 @@ module.init = function()
 	halfHeight = function(max) return max.h / 2 end
 	maxHeight = function(max) return max.h end
 
-	local prefix = { 'cmd', 'alt', 'ctrl' }
+	local prefix = { 'alt', 'ctrl', 'shift' }
 
 	hs.window.animationDuration = 0
 
