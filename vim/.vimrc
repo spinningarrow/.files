@@ -138,7 +138,7 @@ nmap <Leader>> :SidewaysRight<CR>
 nmap <Leader>/ :noh<CR>
 map <Leader>c :checktime<CR>
 nmap <silent> <Leader>d <Plug>DashSearch
-nmap <Leader>f :Ags<Space>
+nmap <Leader>f :Ag<Space>
 map <Leader>gb :Gblame<CR>
 map <Leader>gd :Gvdiff<CR>
 map <Leader>gg :GitGutter<CR>
