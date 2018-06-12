@@ -10,5 +10,5 @@ nowPlaying.init()
 local displaySleep = require('display-sleep')
 displaySleep.init()
 
-local launchITerm = require('launch-iterm')
-launchITerm.init()
+local launchApps = require('launch-apps')
+launchApps.init()
