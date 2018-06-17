@@ -27,7 +27,6 @@ Plug 'w0rp/ale'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'flazz/vim-colorschemes'
 Plug 'ap/vim-css-color'
-Plug 'rizzatti/dash.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'junegunn/vim-easy-align'
 Plug 'editorconfig/editorconfig-vim'
@@ -37,15 +36,11 @@ Plug 'tpope/vim-fugitive'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'keith/investigate.vim'
 Plug 'Shougo/neocomplete.vim'
 Plug 'osyo-manga/vim-over'
 Plug 'bhurlow/vim-parinfer'
 Plug 'sheerun/vim-polyglot'
-Plug 'tpope/vim-rails', { 'for': 'ruby' }
-Plug 'luochen1990/rainbow'
 Plug 'tpope/vim-repeat'
-Plug 'google/vim-searchindex'
 Plug 'AndrewRadev/sideways.vim'
 Plug 'tpope/vim-surround'
 Plug 'ternjs/tern_for_vim', { 'for': 'javascript' }
@@ -81,7 +76,6 @@ autocmd BufNewFile,BufRead *.tmux.conf set ft=sh
 autocmd BufNewFile,BufRead build.boot set ft=clojure
 au FileType javascript setlocal suffixesadd=.js " make gf work with CommonJS
 au FileType markdown setlocal tw=79 spell
-au FileType clojure :RainbowToggle
 
 " Colors and colorscheme
 function! ColorschemeDark()
