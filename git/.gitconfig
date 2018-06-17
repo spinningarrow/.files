@@ -4,27 +4,8 @@
 [includeIf "gitdir:~/dev.tw/"]
 	path = ~/dev.tw/.gitconfig
 [alias]
-	a = add
-	ai = add --interactive
-	ap = add --patch
-	b = branch
-	c = commit -v
-	co = checkout
-	d = diff
-	dc = diff --color-words
-	ds = diff --staged
-	dt = difftool -y -d
-	f = fetch
-	l = log
-	l1 = log -1
 	ld = log --graph --decorate --oneline
 	lg = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=relative --graph
-	ll = log @{u}..
-	lr = log ..@{u}
-	r = remote
-	s = status -sb
-	sl = stash list
-	g = grep
 [color]
 	ui = auto
 [core]
