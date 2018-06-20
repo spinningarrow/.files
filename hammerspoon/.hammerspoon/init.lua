@@ -12,3 +12,6 @@ displaySleep.init()
 
 local launchApps = require('launch-apps')
 launchApps.init()
+
+local keyboardWatcher = require('keyboard-watcher')
+keyboardWatcher.init()
