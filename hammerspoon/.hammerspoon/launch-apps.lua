@@ -7,7 +7,7 @@ appLauncher = function (bundleID)
 		if focusedApp:bundleID() == bundleID then
 			focusedApp:hide()
 		else
-			hs.application.open(bundleID)
+			hs.application.launchOrFocusByBundleID(bundleID)
 		end
 	end
 end
