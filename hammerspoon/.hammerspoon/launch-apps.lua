@@ -1,6 +1,6 @@
 local module = {}
 
-appLauncher = function (bundleID)
+function appLauncher(bundleID)
 	return function()
 		local focusedApp = hs.application.frontmostApplication()
 
