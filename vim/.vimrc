@@ -107,7 +107,6 @@ set mouse=a
 set nofoldenable
 set nowrap
 set number
-set relativenumber
 set scrolloff=1
 set shiftwidth=4
 set tabstop=4
