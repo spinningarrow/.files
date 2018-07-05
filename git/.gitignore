@@ -2,3 +2,4 @@
 *.sw?
 *.sublime-workspace
 .lein-repl-history
+.rebel_readline_history
