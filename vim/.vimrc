@@ -137,8 +137,8 @@ map <Leader>gd :Gvdiff<CR>
 map <Leader>gg :GitGutter<CR>
 map <Leader>gm :Gmove
 map <Leader>gs :Gstatus<CR>
-nmap <Leader>p :Files<CR>
-nmap <Leader>P :GFiles<CR>
+nmap <Leader>o :Files<CR>
+nmap <Leader>p :GFiles<CR>
 nmap <Leader>q :Buffers<CR>
 nmap <Leader>r :redraw!<CR>
 nmap <Leader>s :OverCommandLine<CR>%s/
