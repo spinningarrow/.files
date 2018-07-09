@@ -149,6 +149,7 @@ nmap <Leader>s :OverCommandLine<CR>%s/
 "" ALE
 let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['prettier']
+let g:ale_fixers['json'] = ['prettier']
 let g:ale_javascript_prettier_use_local_config = 1
 let g:ale_fix_on_save = 1
 
