@@ -107,10 +107,12 @@ set mouse=a
 set nofoldenable
 set nowrap
 set number
+set path+=**
 set scrolloff=1
 set shiftwidth=4
 set tabstop=4
 set ttimeoutlen=0 " same as MacVim; updates powerline immediately on Escape
+set wildmenu
 
 set statusline=
 set statusline +=\ %f%h%m%r%w
