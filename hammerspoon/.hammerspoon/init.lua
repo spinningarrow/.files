@@ -15,3 +15,6 @@ launchApps.init()
 
 local keyboardWatcher = require('keyboard-watcher')
 keyboardWatcher.init()
+
+local wallpaper = require('wallpaper')
+wallpaper.init()
