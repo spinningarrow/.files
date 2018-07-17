@@ -1,7 +1,0 @@
-#!/usr/bin/env fish
-
-if test -z $WALLPAPERS_DIR
-	set WALLPAPERS_DIR ~/Dropbox/Wallpapers
-end
-
-osascript -e "tell application \"Finder\" to set desktop picture to POSIX file \""(random choice (find $WALLPAPERS_DIR -type f))"\""
