@@ -27,7 +27,6 @@ abbr -a lx 'less -X'
 abbr -a ns 'nix-shell --command fish -p'
 abbr -a np 'nix-shell -p'
 abbr -a o 'open .'
-abbr -a q exit
 abbr -a ql 'qlmanage -p'
 abbr -a t 'tmux'
 abbr -a ta 'type -a'
