@@ -23,6 +23,7 @@ abbr -a gr git remote
 abbr -a gs git status -sb
 
 abbr -a l 'ls -lahp'
+abbr -a le 'less'
 abbr -a lx 'less -X'
 abbr -a ns 'nix-shell --command fish -p'
 abbr -a np 'nix-shell -p'
