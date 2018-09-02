@@ -2,6 +2,7 @@ abbr -a -- - 'cd -'
 abbr -a axel 'axel -a'
 abbr -a b 'brew'
 abbr -a c 'nix-shell -p clojure --command "clojure -A:rebel -A:cheshire"'
+abbr -a c3 'cal -3'
 abbr -a dl 'wget -r -l 1 -np -nd'
 abbr -a fn 'find . -iname'
 
