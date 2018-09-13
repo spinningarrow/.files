@@ -37,7 +37,7 @@ Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'Shougo/neocomplete.vim'
-Plug 'osyo-manga/vim-over'
+Plug 'markonm/traces.vim'
 Plug 'bhurlow/vim-parinfer'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-repeat'
@@ -143,7 +143,7 @@ nmap <Leader>o :Files<CR>
 nmap <Leader>p :GFiles<CR>
 nmap <Leader>q :Buffers<CR>
 nmap <Leader>r :redraw!<CR>
-nmap <Leader>s :OverCommandLine<CR>%s/
+nmap <Leader>s :%s/
 
 " Plugin settings
 "" ALE
