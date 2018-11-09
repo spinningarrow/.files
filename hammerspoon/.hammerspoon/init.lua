@@ -15,3 +15,6 @@ keyboardWatcher.init()
 
 local wallpaper = require('wallpaper')
 wallpaper.init()
+
+local concourse = require('concourse')
+concourse.init()
