@@ -83,7 +83,7 @@ module.init = function(flyPath, target)
 	end
 
 	buildMenu()
-	hs.timer.doEvery(90, buildMenu)
+	menuTimer = hs.timer.doEvery(90, buildMenu)
 end
 
 return module
