@@ -32,4 +32,5 @@ abbr -a o 'open .'
 abbr -a ql 'qlmanage -p'
 abbr -a t 'tmux'
 abbr -a ta 'type -a'
+abbr -a tsp 'tmux show-buffer | pbcopy'
 abbr -a v vim
