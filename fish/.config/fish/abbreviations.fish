@@ -1,10 +1,3 @@
-abbr -a -- - 'cd -'
-abbr -a axel 'axel -a'
-abbr -a b 'brew'
-abbr -a c3 'cal -3'
-abbr -a dl 'wget -r -l 1 -np -nd'
-abbr -a fn 'find . -iname'
-
 abbr -a g git
 abbr -a ga git add
 abbr -a gap git add --patch
@@ -22,12 +15,18 @@ abbr -a glr git log \'..@\{u\}\'
 abbr -a gr git remote
 abbr -a gs git status -sb
 
+abbr -a -- - 'cd -'
+abbr -a axel 'axel -a'
+abbr -a b 'brew'
+abbr -a c3 'cal -3'
+abbr -a dl 'wget -r -l 1 -np -nd'
+abbr -a fn 'find . -iname'
 abbr -a l 'ls -lahp'
 abbr -a le 'less'
 abbr -a lx 'less -X'
 abbr -a ncl 'nix-shell -p clojure --command "clojure -A:rebel -A:cheshire"'
-abbr -a ns 'nix-shell --command fish -p'
 abbr -a np 'nix-shell -p'
+abbr -a ns 'nix-shell --command fish -p'
 abbr -a o 'open .'
 abbr -a ql 'qlmanage -p'
 abbr -a t 'tmux'
