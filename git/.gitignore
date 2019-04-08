@@ -4,3 +4,4 @@
 .lein-repl-history
 .rebel_readline_history
 tags
+.cpcache
