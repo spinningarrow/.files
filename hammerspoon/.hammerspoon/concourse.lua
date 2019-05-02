@@ -8,21 +8,7 @@ local split = function(string, separator)
 	return result
 end
 
-module.init = function(flyPath, target)
-	local flyWithTarget = flyPath .. ' -t ' .. target
-	local concourseUrl = hs.execute(flyWithTarget .. ' targets | grep ' .. target .. ' | tr -s " " | cut -d" " -f2 | xargs echo -n')
-	local dashboardUrl = concourseUrl .. '/dashboard'
-
-	local menuState = function(jobStatus)
-		if jobStatus == 'succeeded' then
-			return 'on'
-		elseif jobStatus == 'failed' then
-			return 'off'
-		elseif jobStatus == 'started' then
-			return 'mixed'
-		end
-	end
-
+module.init = function(dashboardUrl, target)
 	local statusIcon = function(menuState)
 		if menuState == 'on' then
 			return '🎉'
@@ -31,39 +17,23 @@ module.init = function(flyPath, target)
 		end
 	end
 
-	local jobs = function(pipeline)
-		local jobsString = hs.execute(flyWithTarget .. ' jobs -p' .. pipeline .. ' | tr -s " " | cut -d" " -f1,3')
-		local result = {
-			title = pipeline,
-			menu = {},
-			state = 'on'
-		}
-
-		for _, job in ipairs(split(jobsString, '\n')) do
-			local jobDetails = split(job, ' ')
-			local state = menuState(jobDetails[2])
-
-			if state == 'off' then result['state'] = 'off' end
-
-			table.insert(result['menu'], { title = jobDetails[1], state = state })
-		end
-
-		return result
-	end
-
-	local menu = function()
-		local pipelinesString = hs.execute(flyWithTarget .. ' pipelines | cut -d" " -f1')
+	local menu = function(pipelinesString)
 		local result = {
 			menu = {},
 			state = 'on'
 		}
 
 		for _, pipeline in ipairs(split(pipelinesString, '\n')) do
-			local subMenu = jobs(pipeline)
+			details = split(pipeline, ' ')
+			local state
+			if details[2] == '1' then
+				state = 'on'
+			else
+				state = 'off'
+			end
 
-			if subMenu['state'] == 'off' then result['state'] = 'off' end
-
-			table.insert(result['menu'], subMenu)
+			table.insert(result['menu'], {title=details[1], state=state})
+			if state == 'off' then result['state'] = 'off' end
 		end
 
 		table.insert(result['menu'], { title = '-' })
@@ -73,17 +43,19 @@ module.init = function(flyPath, target)
 	end
 
 	concourse = hs.menubar.new()
+	concourse:setTitle('...')
 
 	local buildMenu = function()
-		print('building menu...')
-		concourse:setTitle('...')
-		local m = menu()
-		concourse:setTitle(statusIcon(m['state']))
-		concourse:setMenu(m['menu'])
+		hs.task.new('/usr/local/bin/fish', function(exitCode, pipelinesString, stdErr)
+			print('building menu...')
+			local m = menu(pipelinesString)
+			concourse:setTitle(statusIcon(m['state']))
+			concourse:setMenu(m['menu'])
+		end, { './pipelines.fish', target }):start()
 	end
 
 	buildMenu()
-	menuTimer = hs.timer.doEvery(90, buildMenu)
+	menuTimer = hs.timer.doEvery(60, buildMenu)
 end
 
 return module
