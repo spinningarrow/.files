@@ -32,7 +32,11 @@ module.init = function(dashboardUrl, target)
 				state = 'off'
 			end
 
-			table.insert(result['menu'], {title=details[1], state=state})
+			table.insert(result['menu'], {
+				title=details[1],
+				fn = function () hs.urlevent.openURL(dashboardUrl) end,
+				state=state
+			})
 			if state == 'off' then result['state'] = 'off' end
 		end
 
