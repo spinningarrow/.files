@@ -47,7 +47,6 @@ Plug 'ternjs/tern_for_vim', { 'for': 'javascript' }
 Plug 'tomtom/tcomment_vim'
 Plug 'benmills/vimux'
 Plug 'tpope/vim-unimpaired'
-Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-vinegar'
 
 packadd! matchit
