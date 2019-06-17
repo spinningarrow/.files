@@ -14,6 +14,7 @@ abbr -a gll git log \'@\{u\}..\'
 abbr -a glr git log \'..@\{u\}\'
 abbr -a gr git remote
 abbr -a gs git status -sb
+abbr -a guser git config --file (git config --show-origin user.name | cut -f1 | cut -d':' -f2) user.name
 
 abbr -a -- - 'cd -'
 abbr -a axel 'axel -a'
