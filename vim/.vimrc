@@ -156,9 +156,6 @@ let g:ale_fix_on_save = 1
 "" delimitMate
 let delimitMate_expand_cr = 1
 
-"" Editorconfig
-let g:EditorConfig_core_mode = 'external_command'
-
 "" Emmet
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
