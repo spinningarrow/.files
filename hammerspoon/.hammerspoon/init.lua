@@ -1,7 +1,5 @@
 require('windows').init()
 require('config-reloader').init()
-require('display-sleep').init()
 require('launch-apps').init()
 -- require('keyboard-watcher').init()
 require('wallpaper').init()
---require('concourse').init()
