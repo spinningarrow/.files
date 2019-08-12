@@ -97,6 +97,7 @@ set backspace=2 " the default OS X and Linux(?) vimrc files do this anyway
 set clipboard=unnamed
 set colorcolumn=80
 set hlsearch
+set ignorecase
 set smartcase
 set incsearch
 set laststatus=2
