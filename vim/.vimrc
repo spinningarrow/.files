@@ -160,6 +160,9 @@ let delimitMate_expand_cr = 1
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
 
+"" fzf
+let g:fzf_layout = { 'up' : '~30%' }
+
 "" Gitgutter
 set signcolumn=yes
 
