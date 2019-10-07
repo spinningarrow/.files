@@ -4,7 +4,7 @@
 [includeIf "gitdir:~/dev.tw/"]
 	path = ~/dev.tw/.gitconfig
 [includeIf "gitdir:~/dev/jh/"]
-	path = ~/dev/jh/gitconfig
+	path = ~/dev/jh/.config/gitconfig
 [alias]
 	ld = log --graph --decorate --oneline
 	lg = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=relative --graph
