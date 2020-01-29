@@ -1,0 +1,7 @@
+set hlsearch
+set ignorecase
+set incsearch
+
+set commentary
+set surround
+
