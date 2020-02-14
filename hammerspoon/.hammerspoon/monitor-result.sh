@@ -1,0 +1,1 @@
+/Users/sabajaj/dev/sn/monitor/monitor-result.sh
