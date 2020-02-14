@@ -1,6 +1,7 @@
 set hlsearch
 set ignorecase
 set incsearch
+set clipboard+=unnamedplus
 
 set commentary
 set surround
