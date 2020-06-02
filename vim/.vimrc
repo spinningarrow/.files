@@ -1,10 +1,6 @@
 set shell=/bin/bash
 
 " Install executables needed by certain plugins
-if !executable('ag')
-	silent !brew install ag
-endif
-
 if !executable('editorconfig')
 	silent !brew install editorconfig
 endif
@@ -22,13 +18,11 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'gabesoft/vim-ags'
 Plug 'w0rp/ale'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'flazz/vim-colorschemes'
 Plug 'ap/vim-css-color'
 Plug 'Raimondi/delimitMate'
-Plug 'junegunn/vim-easy-align'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
@@ -41,7 +35,6 @@ Plug 'markonm/traces.vim'
 Plug 'bhurlow/vim-parinfer'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-repeat'
-Plug 'AndrewRadev/sideways.vim'
 Plug 'tpope/vim-surround'
 Plug 'ternjs/tern_for_vim', { 'for': 'javascript' }
 Plug 'tomtom/tcomment_vim'
@@ -132,7 +125,6 @@ nmap <Leader>> :SidewaysRight<CR>
 nmap <Leader>/ :noh<CR>
 map <Leader>c :checktime<CR>
 nmap <silent> <Leader>d <Plug>DashSearch
-nmap <Leader>f :Ag<Space>
 map <Leader>gb :Gblame<CR>
 map <Leader>gd :Gvdiff<CR>
 map <Leader>gg :GitGutter<CR>
