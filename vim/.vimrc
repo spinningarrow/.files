@@ -67,6 +67,7 @@ endif
 autocmd BufNewFile,BufRead *.tmux.conf set ft=sh
 autocmd BufNewFile,BufRead build.boot set ft=clojure
 au FileType javascript setlocal suffixesadd=.js " make gf work with CommonJS
+au FileType typescriptreact setlocal suffixesadd=.ts " make gf work with CommonJS
 au FileType markdown setlocal tw=79 spell
 
 " Colors and colorscheme
@@ -141,10 +142,8 @@ nmap <Leader>s :%s/
 let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['eslint']
 let g:ale_fixers['vue'] = ['eslint']
-let g:ale_fixers['json'] = ['prettier']
 let g:ale_fixers['typescript'] = ['prettier']
 let g:ale_javascript_prettier_use_local_config = 1
-let g:ale_javascript_prettier_options='--use-tabs --single-quote --no-semi'
 let g:ale_fix_on_save = 1
 
 "" delimitMate
@@ -152,10 +151,7 @@ let delimitMate_expand_cr = 1
 
 "" Emmet
 let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
-
-"" fzf
-let g:fzf_layout = { 'up' : '~30%' }
+autocmd FileType html,css,javascript EmmetInstall
 
 "" Gitgutter
 set signcolumn=yes
