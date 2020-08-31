@@ -115,26 +115,15 @@ set statusline +=%=\ %y
 let mapleader="\<Space>"
 
 nnoremap <Leader>w :w<CR>
-
-nmap <Leader>, :tabnew ~/.vimrc<CR>
 nmap <Leader>1 :VimuxPromptCommand<CR>
 nmap <Leader>! :VimuxRunLastCommand<CR>
 nmap <Leader>- :StripWhitespace<CR>
-nmap <Leader>< :SidewaysLeft<CR>
-nmap <Leader>> :SidewaysRight<CR>
 nmap <Leader>/ :noh<CR>
 map <Leader>c :checktime<CR>
-nmap <silent> <Leader>d <Plug>DashSearch
-map <Leader>gb :Gblame<CR>
-map <Leader>gd :Gvdiff<CR>
 map <Leader>gg :GitGutter<CR>
-map <Leader>gm :Gmove
-map <Leader>gs :Gstatus<CR>
 nmap <Leader>o :Files<CR>
 nmap <Leader>p :GFiles<CR>
 nmap <Leader>q :Buffers<CR>
-nmap <Leader>r :redraw!<CR>
-nmap <Leader>s :%s/
 
 " Plugin settings
 "" ALE
