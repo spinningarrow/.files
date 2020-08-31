@@ -36,24 +36,13 @@ Plug 'bhurlow/vim-parinfer'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
-Plug 'ternjs/tern_for_vim', { 'for': 'javascript' }
 Plug 'tomtom/tcomment_vim'
 Plug 'benmills/vimux'
 Plug 'tpope/vim-vinegar'
 
-packadd! matchit
-
 call plug#end()
 
-" Setup TernJS if this is the first time
-if !isdirectory(glob("~/.vim/plugged/tern_for_vim/node_modules")) &&
-			\ isdirectory(glob("~/.vim/plugged/tern_for_vim"))
-	if !executable('node')
-		silent !brew install node
-	endif
-
-	!cd ~/.vim/plugged/tern_for_vim && npm install
-endif
+packadd! matchit
 
 filetype plugin indent on
 set encoding=utf-8
@@ -65,8 +54,8 @@ if !exists("g:syntax_on")
 endif
 autocmd BufNewFile,BufRead *.tmux.conf set ft=sh
 autocmd BufNewFile,BufRead build.boot set ft=clojure
-au FileType javascript setlocal suffixesadd=.js " make gf work with CommonJS
-au FileType typescriptreact setlocal suffixesadd=.ts " make gf work with CommonJS
+au FileType javascript setlocal suffixesadd=.js " make gf work
+au FileType typescriptreact setlocal suffixesadd=.ts " make gf work
 au FileType markdown setlocal tw=79 spell
 
 " Colors and colorscheme
@@ -159,12 +148,6 @@ let g:netrw_liststyle = 3
 
 "" Over
 let g:over#command_line#enable_import_commandline_map = 0 " for vim-searchindex
-
-"" Rainbow
-let g:rainbow_active=0
-
-"" TernJS
-let g:tern_map_keys=1
 
 " Automatically apply vimrc changes on save
 augroup SourceVimrcOnSave
