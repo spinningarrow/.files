@@ -1,8 +1,8 @@
 [user]
 	name = Sahil Bajaj
 	email = 1797328+spinningarrow@users.noreply.github.com
-[includeIf "gitdir:~/dev/sn/"]
-	path = ~/dev/sn/config/gitconfig
+[includeIf "gitdir:~/dev/p/"]
+	path = ~/dev/p/config/gitconfig
 [alias]
 	ld = log --graph --decorate --oneline
 	lg = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=relative --graph
