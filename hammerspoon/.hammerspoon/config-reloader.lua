@@ -13,7 +13,7 @@ module.init = function()
 		end
 	end
 
-	local myWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
+	local myWatcher = hs.pathwatcher.new('.', reloadConfig):start()
 	hs.alert.show("Config loaded")
 end
 
