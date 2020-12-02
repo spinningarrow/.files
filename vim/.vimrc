@@ -113,6 +113,7 @@ map <Leader>gg :GitGutter<CR>
 nmap <Leader>o :Files<CR>
 nmap <Leader>p :GFiles<CR>
 nmap <Leader>q :Buffers<CR>
+inoremap <expr> <c-x><c-g> fzf#vim#complete('git coauthors')
 
 " Plugin settings
 "" ALE
