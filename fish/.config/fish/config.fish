@@ -12,7 +12,7 @@ set __fish_git_prompt_showcolorhints 'yes'
 set __fish_git_prompt_show_informative_status 'yes'
 
 # Set program options
-set -x HOMEBREW_AUTO_UPDATE_SECS 86400
+set -x HOMEBREW_NO_AUTO_UPDATE true
 
 # Set dev environment paths
 set -x JAVA_HOME (/usr/libexec/java_home)
