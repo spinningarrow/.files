@@ -1,4 +1,4 @@
-function forgit
+function fgd
 	for d in */
 		pushd $d
 		test -d .git && echo $d && eval $argv
