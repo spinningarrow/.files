@@ -14,7 +14,6 @@ end
 
 module.init = function()
 	hs.hotkey.bind({'cmd', 'shift'}, 'space', appLauncher('com.apple.Terminal'))
-	hs.hotkey.bind({'ctrl', 'alt', 'shift'}, 'space', appLauncher('io.dynalist'))
 end
 
 return module
