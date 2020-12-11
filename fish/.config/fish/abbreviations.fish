@@ -2,7 +2,7 @@ abbr -a g git
 abbr -a ga git add
 abbr -a gap git add --patch
 abbr -a gb git branch
-abbr -a gc git commit --verbose
+abbr -a gc git commit
 abbr -a gco git checkout
 abbr -a gd git diff
 abbr -a gdc git diff --color-words
