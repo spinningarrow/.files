@@ -6,6 +6,7 @@
 [alias]
 	ld = log --graph --decorate --oneline
 	lg = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=relative --graph
+	l1m = log -1 --author=Sahil --pretty=%B
 [color]
 	ui = auto
 [core]
