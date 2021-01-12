@@ -1,3 +1,4 @@
+require('google-calendar').init()
 require('launch-apps').init()
 require('wallpaper').init()
 require('windows').init()
