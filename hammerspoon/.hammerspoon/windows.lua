@@ -1,6 +1,8 @@
 local module = {}
 
 module.init = function()
+	hs.grid.setGrid('4x4')
+
 	DimensionsHistory = (function()
 		local history = {}
 
@@ -66,40 +68,40 @@ module.init = function()
 
 	hs.window.animationDuration = 0
 
-	hs.hotkey.bind(prefix, 'H', updateWindow({
-		x = zero,
-		y = zero,
-		w = halfWidth,
-		h = maxHeight,
-	}))
+	hs.hotkey.bind(prefix, 'H', function()
+		local win = hs.window.focusedWindow()
 
-	hs.hotkey.bind(prefix, 'L', updateWindow({
-		x = halfWidth,
-		y = zero,
-		w = halfWidth,
-		h = maxHeight,
-	}))
+		DimensionsHistory.push(win)
+		hs.grid.set(win, '0,0 1x2')
+	end)
 
-	hs.hotkey.bind(prefix, 'J', updateWindow({
-		x = zero,
-		y = function(max) return halfHeight(max) + 23 end, -- weird offset bug
-		w = maxWidth,
-		h = halfHeight,
-	}))
+	hs.hotkey.bind(prefix, 'L', function()
+		local win = hs.window.focusedWindow()
 
-	hs.hotkey.bind(prefix, 'K', updateWindow({
-		x = zero,
-		y = zero,
-		w = maxWidth,
-		h = halfHeight,
-	}))
+		DimensionsHistory.push(win)
+		hs.grid.set(win, '1,0 1x2')
+	end)
 
-	hs.hotkey.bind(prefix, 'F', updateWindow({
-		x = zero,
-		y = zero,
-		w = maxWidth,
-		h = maxHeight,
-	}))
+	hs.hotkey.bind(prefix, 'J', function()
+		local win = hs.window.focusedWindow()
+
+		DimensionsHistory.push(win)
+		hs.grid.set(win, '0,1 2x1')
+	end)
+
+	hs.hotkey.bind(prefix, 'K', function()
+		local win = hs.window.focusedWindow()
+
+		DimensionsHistory.push(win)
+		hs.grid.set(win, '0,0 2x1')
+	end)
+
+	hs.hotkey.bind(prefix, 'F', function()
+		local win = hs.window.focusedWindow()
+
+		DimensionsHistory.push(win)
+		hs.grid.maximizeWindow(win)
+	end)
 
 	hs.hotkey.bind(prefix, 'C', updateWindow({
 		x = function(max, f) return max.x + (max.w / 2 - f.w / 2) end,
@@ -134,6 +136,10 @@ module.init = function()
 	  f.h = previousDimensions.h
 
 	  win:setFrame(f)
+	end)
+
+	hs.hotkey.bind(prefix, 'G', function()
+		hs.grid.show()
 	end)
 end
 
