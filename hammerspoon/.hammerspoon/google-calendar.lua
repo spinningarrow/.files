@@ -21,6 +21,9 @@ module.init = function()
 			calendarView:hide()
 		else
 			calendarView:show():bringToFront()
+			calendarView:evaluateJavaScript('window.alert = console.log', function (result, error)
+				print(result, error)
+			end)
 		end
 	end)
 
