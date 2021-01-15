@@ -30,7 +30,6 @@ Plug 'tpope/vim-fugitive'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'Shougo/neocomplete.vim'
 Plug 'markonm/traces.vim'
 Plug 'bhurlow/vim-parinfer'
 Plug 'sheerun/vim-polyglot'
@@ -135,16 +134,6 @@ autocmd FileType html,css,javascript EmmetInstall
 
 "" Gitgutter
 set signcolumn=yes
-
-"" Neocomplete
-let g:neocomplete#enable_at_startup=1
-let g:neocomplete#enable_smart_case=1
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 "" netrw
 let g:netrw_liststyle = 3
