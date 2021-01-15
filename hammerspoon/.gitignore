@@ -1,0 +1,3 @@
+*.spoon/
+!ControlEscape.spoon/
+!SpoonInstall.spoon/
