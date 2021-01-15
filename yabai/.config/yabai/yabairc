@@ -51,5 +51,6 @@ yabai -m rule --add app="^Microsoft Teams\$" manage=off
 yabai -m rule --add app="^zoom.us\$" manage=off
 yabai -m rule --add app="^1Password 7" manage=off
 yabai -m rule --add app="^Stickies$" manage=off
+yabai -m rule --add app="^System Information$" manage=off
 
 echo "yabai configuration loaded.."
