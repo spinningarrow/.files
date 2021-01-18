@@ -4,8 +4,9 @@ set -g fish_user_paths $fish_user_paths $HOME/bin
 # Include abbreviations
 source $HOME/.config/fish/abbreviations.fish
 
-# Initialize commajump
+# Initialize special functions
 source $HOME/.config/fish/functions/__commajump_add.fish
+source $HOME/.config/fish/functions/tmux_rename_window.fish
 
 # Git prompt options
 set __fish_git_prompt_showcolorhints 'yes'
