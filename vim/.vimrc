@@ -37,7 +37,6 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tomtom/tcomment_vim'
 Plug 'benmills/vimux'
-Plug 'tpope/vim-vinegar'
 
 call plug#end()
 
@@ -104,6 +103,7 @@ set statusline +=%=\ %y
 " Key bindings
 let mapleader="\<Space>"
 
+nnoremap - :Explore<CR>
 nnoremap <Leader>w :w<CR>
 nmap <Leader>1 :VimuxPromptCommand<CR>
 nmap <Leader>! :VimuxRunLastCommand<CR>
@@ -136,7 +136,8 @@ autocmd FileType html,css,javascript EmmetInstall
 set signcolumn=yes
 
 "" netrw
-let g:netrw_liststyle = 3
+let g:netrw_banner = 0
+let g:netrw_liststyle = 1
 
 "" Over
 let g:over#command_line#enable_import_commandline_map = 0 " for vim-searchindex
