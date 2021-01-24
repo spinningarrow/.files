@@ -50,8 +50,6 @@ set fileencoding=utf-8
 if !exists("g:syntax_on")
 	syntax enable
 endif
-autocmd BufNewFile,BufRead *.tmux.conf set ft=sh
-autocmd BufNewFile,BufRead build.boot set ft=clojure
 au FileType javascript setlocal suffixesadd=.js " make gf work
 au FileType typescriptreact setlocal suffixesadd=.ts " make gf work
 au FileType markdown setlocal tw=79 spell
@@ -138,9 +136,6 @@ set signcolumn=yes
 "" netrw
 let g:netrw_banner = 0
 let g:netrw_liststyle = 1
-
-"" Over
-let g:over#command_line#enable_import_commandline_map = 0 " for vim-searchindex
 
 " Automatically apply vimrc changes on save
 augroup SourceVimrcOnSave
