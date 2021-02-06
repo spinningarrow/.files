@@ -1,0 +1,51 @@
+[submodule "vim/.vim/pack/plugins/start/delimitMate"]
+	path = vim/.vim/pack/plugins/start/delimitMate
+	url = https://github.com/Raimondi/delimitMate
+[submodule "vim/.vim/pack/plugins/start/emmet-vim"]
+	path = vim/.vim/pack/plugins/start/emmet-vim
+	url = https://github.com/mattn/emmet-vim
+[submodule "vim/.vim/pack/plugins/start/vim-fugitive"]
+	path = vim/.vim/pack/plugins/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "vim/.vim/pack/plugins/start/vim-gitgutter"]
+	path = vim/.vim/pack/plugins/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule "vim/.vim/pack/plugins/start/vim-repeat"]
+	path = vim/.vim/pack/plugins/start/vim-repeat
+	url = https://github.com/tpope/vim-repeat
+[submodule "vim/.vim/pack/plugins/start/vim-surround"]
+	path = vim/.vim/pack/plugins/start/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "vim/.vim/pack/plugins/start/tcomment_vim"]
+	path = vim/.vim/pack/plugins/start/tcomment_vim
+	url = https://github.com/tomtom/tcomment_vim
+[submodule "vim/.vim/pack/plugins/start/vim-colorschemes"]
+	path = vim/.vim/pack/plugins/start/vim-colorschemes
+	url = https://github.com/flazz/vim-colorschemes
+[submodule "vim/.vim/pack/plugins/start/vim-css-color"]
+	path = vim/.vim/pack/plugins/start/vim-css-color
+	url = https://github.com/ap/vim-css-color
+[submodule "vim/.vim/pack/plugins/start/vim-better-whitespace"]
+	path = vim/.vim/pack/plugins/start/vim-better-whitespace
+	url = https://github.com/ntpeters/vim-better-whitespace
+[submodule "vim/.vim/pack/plugins/start/vim-fireplace"]
+	path = vim/.vim/pack/plugins/start/vim-fireplace
+	url = https://github.com/tpope/vim-fireplace
+[submodule "vim/.vim/pack/plugins/start/ale"]
+	path = vim/.vim/pack/plugins/start/ale
+	url = https://github.com/w0rp/ale
+[submodule "vim/.vim/pack/plugins/start/editorconfig-vim"]
+	path = vim/.vim/pack/plugins/start/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim
+[submodule "vim/.vim/pack/plugins/start/fzf.vim"]
+	path = vim/.vim/pack/plugins/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
+[submodule "vim/.vim/pack/plugins/start/traces.vim"]
+	path = vim/.vim/pack/plugins/start/traces.vim
+	url = https://github.com/markonm/traces.vim
+[submodule "vim/.vim/pack/plugins/start/vim-parinfer"]
+	path = vim/.vim/pack/plugins/start/vim-parinfer
+	url = https://github.com/bhurlow/vim-parinfer
+[submodule "vim/.vim/pack/plugins/start/vim-polyglot"]
+	path = vim/.vim/pack/plugins/start/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot

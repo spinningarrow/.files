@@ -1,50 +1,10 @@
 set shell=/bin/bash
 
-" Install executables needed by certain plugins
-if !executable('editorconfig')
-	silent !brew install editorconfig
-endif
-
-if !executable('fzf')
-	silent !brew install fzf
-endif
-
-" Install vim-plug if it isn't there
-if empty(glob('~/.vim/autoload/plug.vim'))
-	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-		\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-	autocmd VimEnter * PlugInstall | source $MYVIMRC
-endif
-
-call plug#begin('~/.vim/plugged')
-
-Plug 'w0rp/ale'
-Plug 'ntpeters/vim-better-whitespace'
-Plug 'flazz/vim-colorschemes'
-Plug 'ap/vim-css-color'
-Plug 'Raimondi/delimitMate'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'mattn/emmet-vim'
-Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
-Plug 'tpope/vim-fugitive'
-Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf.vim'
-Plug 'airblade/vim-gitgutter'
-Plug 'markonm/traces.vim'
-Plug 'bhurlow/vim-parinfer'
-Plug 'sheerun/vim-polyglot'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-surround'
-Plug 'tomtom/tcomment_vim'
-Plug 'benmills/vimux'
-
-call plug#end()
-
-packadd! matchit
-
 filetype plugin indent on
 set encoding=utf-8
 set fileencoding=utf-8
+
+packadd! matchit
 
 " Syntax
 if !exists("g:syntax_on")
