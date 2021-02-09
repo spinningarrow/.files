@@ -15,9 +15,6 @@ set __fish_git_prompt_show_informative_status 'yes'
 # Set program options
 set -x HOMEBREW_NO_AUTO_UPDATE true
 
-# Set dev environment paths
-set -x JAVA_HOME (/usr/libexec/java_home)
-
 if which direnv > /dev/null
 	eval (direnv hook fish)
 end
