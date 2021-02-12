@@ -14,25 +14,15 @@ au FileType javascript setlocal suffixesadd=.js " make gf work
 au FileType typescriptreact setlocal suffixesadd=.ts " make gf work
 au FileType markdown setlocal tw=79 spell
 
-" Colors and colorscheme
-function! ColorschemeDark()
-	set background=dark
-	colorscheme spacegray
-endfunction
-
-function! ColorschemeLight()
-	set background=light
-	colorscheme pencil
-endfunction
-
+" Better color support
 let &t_8f="\e[38;2;%ld;%ld;%ldm"
 let &t_8b="\e[48;2;%ld;%ld;%ldm"
 if exists('$TMUX')
 	set termguicolors
 endif
-silent! call ColorschemeDark()
 
 " Look and feel
+set background=dark
 set backspace=2 " the default OS X and Linux(?) vimrc files do this anyway
 set clipboard=unnamed
 set colorcolumn=80
@@ -58,13 +48,13 @@ set statusline +=\ %f%h%m%r%w
 set statusline +=%=%{fugitive#statusline()}
 set statusline +=%=\ %y
 
+colorscheme spacegray
+
 " Key bindings
 let mapleader="\<Space>"
 
 nnoremap - :Explore<CR>
 nnoremap <Leader>w :w<CR>
-nmap <Leader>1 :VimuxPromptCommand<CR>
-nmap <Leader>! :VimuxRunLastCommand<CR>
 nmap <Leader>- :StripWhitespace<CR>
 nmap <Leader>/ :noh<CR>
 map <Leader>c :checktime<CR>
