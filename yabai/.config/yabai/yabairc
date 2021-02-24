@@ -53,5 +53,6 @@ yabai -m rule --add app="^1Password 7" manage=off
 yabai -m rule --add app="^Stickies$" manage=off
 yabai -m rule --add app="^System Information$" manage=off
 yabai -m rule --add app="^IntelliJ IDEA\$" manage=off
+yabai -m rule --add app="^Chromium\$" manage=off
 
 echo "yabai configuration loaded.."
