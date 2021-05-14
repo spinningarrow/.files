@@ -39,6 +39,7 @@ set number
 set path+=**
 set scrolloff=1
 set shiftwidth=4
+set showcmd
 set tabstop=4
 set ttimeoutlen=0 " same as MacVim; updates powerline immediately on Escape
 set wildmenu
