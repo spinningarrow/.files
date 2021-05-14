@@ -54,5 +54,8 @@ yabai -m rule --add app="^Stickies$" manage=off
 yabai -m rule --add app="^System Information$" manage=off
 yabai -m rule --add app="^IntelliJ IDEA\$" manage=off
 yabai -m rule --add app="^Chromium\$" manage=off
+yabai -m rule --add app="^Postman\$" manage=off
+yabai -m rule --add app="^Camo Studio\$" manage=off
+yabai -m rule --add app="^Terminal\$" manage=off
 
 echo "yabai configuration loaded.."
