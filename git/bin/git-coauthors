@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-git shortlog -sne | cut -f2- | xargs -I @ echo 'Co-Authored-By: @'
+git shortlog -sne | cut -f2- | while read author; do
+	echo Co-Authored-By: $author
+done
