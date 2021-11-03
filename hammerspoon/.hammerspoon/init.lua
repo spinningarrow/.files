@@ -13,3 +13,14 @@ spoon.SpoonInstall:andUse("DeepLTranslate", {
 		translate = { {'ctrl', 'alt', 'shift'}, 'D' }
 	}
 })
+
+
+spoon.SpoonInstall:andUse('WindowGrid', {
+	config = {
+		gridGeometries = { { '2x2' } }
+	},
+	hotkeys = {
+		show_grid = { {'ctrl', 'alt', 'shift'}, 'G' }
+	},
+	start = true
+})
