@@ -14,6 +14,7 @@ set __fish_git_prompt_show_informative_status 'yes'
 
 # Set program options
 set -x HOMEBREW_NO_AUTO_UPDATE true
+set -x COLORTERM true
 
 if which direnv > /dev/null
 	eval (direnv hook fish)
