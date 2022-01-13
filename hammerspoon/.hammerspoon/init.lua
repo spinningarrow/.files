@@ -2,6 +2,7 @@ require('google-calendar').init()
 require('launch-apps').init()
 require('wallpaper').init()
 require('yabai').init()
+require('spt').init()
 
 hs.loadSpoon('SpoonInstall')
 hs.loadSpoon('ControlEscape'):start()
