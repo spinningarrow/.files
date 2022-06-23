@@ -61,13 +61,14 @@ let mapleader="\<Space>"
 
 nnoremap - :Explore<CR>
 nnoremap <Leader>w :w<CR>
-nmap <Leader>- :StripWhitespace<CR>
-nmap <Leader>/ :noh<CR>
-map <Leader>c :checktime<CR>
-map <Leader>gg :GitGutter<CR>
-nmap <Leader>o :Files<CR>
-nmap <Leader>p :GFiles<CR>
-nmap <Leader>q :Buffers<CR>
+nnoremap <Leader>- :StripWhitespace<CR>
+nnoremap <Leader>/ :noh<CR>
+noremap <Leader>c :checktime<CR>
+noremap <Leader>f :Rg<CR>
+noremap <Leader>gg :GitGutter<CR>
+nnoremap <Leader>o :Files<CR>
+nnoremap <Leader>p :GFiles<CR>
+nnoremap <Leader>q :Buffers<CR>
 inoremap <expr> <c-x><c-g> fzf#vim#complete('git coauthors')
 
 " Plugin settings
