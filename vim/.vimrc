@@ -78,6 +78,7 @@ let g:ale_fixers['javascript'] = ['prettier']
 let g:ale_fixers['vue'] = ['eslint']
 let g:ale_fixers['typescript'] = ['prettier']
 let g:ale_fixers['typescriptreact'] = ['prettier']
+let g:ale_fixers['terraform'] = ['terraform']
 let g:ale_javascript_prettier_use_local_config = 1
 let g:ale_fix_on_save = 1
 
