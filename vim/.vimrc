@@ -44,9 +44,14 @@ set tabstop=4
 set ttimeoutlen=0 " same as MacVim; updates powerline immediately on Escape
 set wildmenu
 
+function! GitStatus()
+    let [a,m,r] = GitGutterGetHunkSummary()
+    return printf('+%d ~%d -%d', a, m, r)
+endfunction
 set statusline=
 set statusline +=\ %f%h%m%r%w
 set statusline +=%=%{fugitive#statusline()}
+set statusline+=%=\ [%{GitStatus()}]
 set statusline +=%=\ %y
 
 colorscheme spacegray
