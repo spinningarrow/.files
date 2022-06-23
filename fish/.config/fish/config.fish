@@ -11,6 +11,7 @@ source $HOME/.config/fish/functions/tmux_rename_window.fish
 # Git prompt options
 set __fish_git_prompt_showcolorhints 'yes'
 set __fish_git_prompt_show_informative_status 'yes'
+set __fish_git_prompt_showuntrackedfiles 'yes'
 
 # Set program options
 set -x HOMEBREW_NO_AUTO_UPDATE true
