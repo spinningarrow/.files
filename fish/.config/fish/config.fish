@@ -1,5 +1,7 @@
 # Set path
-set -g fish_user_paths $fish_user_paths /opt/homebrew/bin $HOME/bin $HOME/go/bin
+fish_add_path /opt/homebrew/bin
+fish_add_path $HOME/go/bin
+fish_add_path $HOME/bin
 
 # Include abbreviations
 source $HOME/.config/fish/abbreviations.fish
