@@ -44,6 +44,8 @@ set tabstop=4
 set ttimeoutlen=0 " same as MacVim; updates powerline immediately on Escape
 set wildmenu
 
+let g:netrw_maxfilenamelen = 64
+
 function! GitStatus()
     let [a,m,r] = GitGutterGetHunkSummary()
     return printf('+%d ~%d -%d', a, m, r)
