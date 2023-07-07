@@ -103,3 +103,5 @@ augroup SourceVimrcOnSave
 	autocmd!
 	autocmd BufWritePost .vimrc source $MYVIMRC
 augroup end
+
+set tagfunc=CocTagFunc
