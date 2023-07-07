@@ -17,6 +17,9 @@ function fish_prompt --description 'Write out the prompt'
 
 	__fish_git_prompt
 
+	# Terraform Workspace
+	string match -qr infrastructure $PWD; and echo -n ' ('(terraform workspace show 2>/dev/null)')'
+
 	set jobs_count (jobs | wc -l | xargs)
 	if test $jobs_count != '0'
 		printf ' (↩ %s)' $jobs_count
