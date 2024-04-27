@@ -44,8 +44,6 @@ set tabstop=4
 set ttimeoutlen=0 " same as MacVim; updates powerline immediately on Escape
 set wildmenu
 
-let g:netrw_maxfilenamelen = 64
-
 function! GitStatus()
     let [a,m,r] = GitGutterGetHunkSummary()
     return printf('+%d ~%d -%d', a, m, r)
@@ -71,7 +69,6 @@ noremap <Leader>gg :GitGutter<CR>
 nnoremap <Leader>o :Files<CR>
 nnoremap <Leader>p :GFiles<CR>
 nnoremap <Leader>q :Buffers<CR>
-inoremap <expr> <c-x><c-g> fzf#vim#complete('git coauthors')
 
 " Plugin settings
 "" ALE
@@ -97,6 +94,7 @@ set signcolumn=yes
 "" netrw
 let g:netrw_banner = 0
 let g:netrw_liststyle = 1
+let g:netrw_maxfilenamelen = 64
 
 " Automatically apply vimrc changes on save
 augroup SourceVimrcOnSave
