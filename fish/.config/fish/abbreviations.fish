@@ -33,6 +33,6 @@ abbr -a ogr 'open (git remote get-url origin)'
 abbr -a gpc 'gopass show -c'
 abbr -a ql 'qlmanage -p'
 abbr -a t 'tmux'
-abbr -a ta 'type -a'
+abbr -a ta 'type -ap'
 abbr -a tsp 'tmux show-buffer | pbcopy'
 abbr -a v nvim

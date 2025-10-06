@@ -17,7 +17,9 @@ set __fish_git_prompt_showuntrackedfiles 'yes'
 
 # Set program options
 set -x HOMEBREW_NO_AUTO_UPDATE true
+set -x HOMEBREW_NO_INSTALL_CLEANUP true
 set -x COLORTERM true
+set -x CLOUDSDK_PYTHON /usr/bin/python3
 
 if which direnv > /dev/null
 	eval (direnv hook fish)
