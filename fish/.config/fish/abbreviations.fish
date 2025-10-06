@@ -8,6 +8,7 @@ abbr -a gd git diff
 abbr -a gdc git diff --color-words
 abbr -a gds git diff --staged
 abbr -a gf git fetch
+abbr -a gg git grep
 abbr -a gl git log --graph --decorate
 abbr -a gl1 git log -1
 abbr -a gll git log \'@\{u\}..\'
