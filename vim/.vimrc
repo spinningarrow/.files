@@ -28,7 +28,6 @@ set clipboard=unnamed
 set colorcolumn=80
 set hlsearch
 set ignorecase
-set smartcase
 set incsearch
 set laststatus=2
 set listchars=tab:▸—
@@ -40,7 +39,9 @@ set path+=**
 set scrolloff=1
 set shiftwidth=4
 set showcmd
+set smartcase
 set tabstop=4
+set tagfunc=CocTagFunc
 set ttimeoutlen=0 " same as MacVim; updates powerline immediately on Escape
 set wildmenu
 
@@ -113,5 +114,3 @@ augroup SourceVimrcOnSave
 	autocmd!
 	autocmd BufWritePost .vimrc source $MYVIMRC
 augroup end
-
-set tagfunc=CocTagFunc
