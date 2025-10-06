@@ -64,7 +64,8 @@ nnoremap <Leader>w :w<CR>
 nnoremap <Leader>- :StripWhitespace<CR>
 nnoremap <Leader>/ :noh<CR>
 noremap <Leader>c :checktime<CR>
-noremap <Leader>f :Rg<CR>
+noremap <Leader>r :Rg<CR>
+noremap <Leader>f :GGrep<CR>
 noremap <Leader>gg :GitGutter<CR>
 nnoremap <Leader>o :Files<CR>
 nnoremap <Leader>p :GFiles<CR>
@@ -87,6 +88,17 @@ let delimitMate_expand_cr = 1
 "" Emmet
 let g:user_emmet_install_global = 0
 autocmd FileType html,css,javascript EmmetInstall
+
+"" fzf
+command! -bang -nargs=* GGrep
+  \ call fzf#vim#grep(
+  \   'git grep --line-number -- '.fzf#shellescape(<q-args>),
+  \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0], 'options': '--no-hscroll'}, 'up', 'ctrl-\'), <bang>0)
+
+command! -bang -nargs=* Rg
+  \ call fzf#vim#grep(
+  \   "rg -u --column --line-number --no-heading --color=always --smart-case -- ".shellescape(<q-args>), 0,
+  \   fzf#vim#with_preview({'options': '--no-hscroll'}, 'up', 'ctrl-\'), <bang>0)
 
 "" Gitgutter
 set signcolumn=yes
