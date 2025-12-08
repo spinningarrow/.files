@@ -1,5 +1,3 @@
-require('launch-apps').init()
-
 hs.loadSpoon('SpoonInstall')
 hs.loadSpoon('ControlEscape'):start()
 

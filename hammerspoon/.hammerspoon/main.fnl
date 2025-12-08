@@ -1,3 +1,5 @@
+(require :launch-apps)
+
 ;; Easily set high input volume
 (hs.hotkey.bind ["ctrl" "alt" "shift"] "I"
   (fn []
